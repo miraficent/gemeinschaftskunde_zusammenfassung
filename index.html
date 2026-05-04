@@ -1,0 +1,2952 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themenzusammenfassung</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #e0e0e0;
+
+
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --border-color: #dcdde1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+
+        /* Header Bereich */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--primary-color), #34495e);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+
+        /* --- NEU: Block Überschriften --- */
+        .block-title {
+            padding: 15px 25px;
+            color: white;
+            border-radius: 8px;
+            margin: 50px 0 25px 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bg-block1 {
+            background: linear-gradient(135deg, #2980b9, #3498db);
+        }
+
+        /* Blau */
+        .bg-block2 {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+        }
+
+        /* Grün */
+        .bg-block3 {
+            background: linear-gradient(135deg, #d35400, #e67e22);
+        }
+
+        /* Orange */
+        .bg-block4 {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+        }
+
+        /* Rot */
+        .bg-block5 {
+            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+        }
+
+         /* --- NEU: Markierungen & Highlights --- */
+        mark {
+            background-color: #ffeaa7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: white;
+            background-color: var(--secondary-color);
+            margin: 2px;
+        }
+        .badge.red { background-color: var(--accent-color); }
+        .badge.green { background-color: var(--success-color); }
+        .badge.orange { background-color: var(--warning-color); }
+
+        /* Lila */
+
+        /* Karten Layout für die Sektionen */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .card h2 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            border-bottom: 2px solid var(--background-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Tabellen Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Flexbox für Bilder und Mindmaps nebeneinander (auf großen Bildschirmen) */
+        .visual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .visual-box {
+            background-color: var(--background-color);
+            border: 2px dashed var(--secondary-color);
+            border-radius: 8px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary-color);
+            font-weight: bold;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Falls du echte Bilder einfügst */
+        .visual-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* oder 'cover' je nach Wunsch */
+        }
+
+        /* Responsive Anpassungen */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+            <!-- 0. PRÜFUNGSVORBEREITUNG: OPERATOREN -->
+        <section class="card">
+            <h2>📝 Exkurs: Operatoren verstehen (Prüfungsvorbereitung)</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 49].</p>
+            <p>In schriftlichen Aufgaben geben "Signalwörter" (Operatoren) vor, wie eine Aufgabe gelöst werden muss[cite: 49].</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Operator</th>
+                        <th>Bedeutung / Was ist zu tun?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>nennen, angeben, aufzählen, auflisten</strong></td>
+                        <td>Informationen zusammentragen (ohne Erläuterung)[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>beschreiben</strong></td>
+                        <td>Inhalt/Thema in eigenen Worten darlegen[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>erklären, erläutern</strong></td>
+                        <td>Inhalt/Thema beschreiben und erklärende Beispiele in eigenen Worten darlegen[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>begründen</strong></td>
+                        <td>Thema mit Argumenten darstellen (<em>Hilfen: da..., weil...</em>)[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>beurteilen</strong></td>
+                        <td>Thema nach Kriterien prüfen, eine Entscheidung/Urteil fällen und mit Argumenten darstellen[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>bewerten, Stellung nehmen</strong></td>
+                        <td>Beurteilen <strong>und</strong> eigene Meinung formulieren[cite: 49].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>erörtern</strong></td>
+                        <td>Pro- und Contra-Argumente beschreiben und die eigene Haltung begründen[cite: 49].</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    <header>
+        <h1>Zusammenfassung Gemeinschaftskunde</h1>
+        <p>Dein strukturierter Lernplan für Klausuren & Prüfungen</p>
+    </header>
+    <div class="container">
+        <!-- ========================================================= -->
+        <!-- BLOCK 1: GRUNDLAGEN DES STAATES UND DER GESELLSCHAFT      -->
+        <!-- ========================================================= -->
+        <div class="block-title bg-block1">📘 Block 1: Grundlagen des Staates und der Gesellschaft</div>
+        <!-- Start Gemeinschaftskunde Block -->
+        <p><strong>Thema:</strong> <mark>Grundrechte</mark> als Grundlage des Zusammenlebens / Grundrechte im
+            Grundgesetz.</p>
+        <section class="card">
+            <h2>🏛️ Fach: GK (Gemeinschaftskunde) - Politischer Entscheidungsprozess</h2>
+
+            <!-- Abschnitt: Einteilung der Grundrechte -->
+            <h3>1. Einteilung der Grundrechte</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategorie</th>
+                        <th>Definition / Geltungsbereich</th>
+                        <th>Beispiele</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Menschenrechte</strong></td>
+                        <td>Haben alle Menschen von Geburt an.</td>
+                        <td>z.B. Recht auf Leben (Freiheit).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bürgerrechte</strong></td>
+                        <td>Haben nur alle Personen, die einen deutschen Pass besitzen.</td>
+                        <td>z.B. Wahlrecht.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Schutz der Grundrechte -->
+            <h3>2. Schutz der Grundrechte</h3>
+            <ul>
+                <li>Unantastbarkeit der Menschenwürde.</li>
+                <li>Grundrechte kann man einklagen. Das zuständige Gericht hierfür ist das Bundesverfassungsgericht.
+                </li>
+                <li>Die Grundrechte können nur mit einer 2/3 Mehrheit im Bundestag und Bundesrat geändert werden.</li>
+                <li>Dabei gilt jedoch: Der Sinn darf nicht geändert werden.</li>
+            </ul>
+
+            <!-- Abschnitt: Artikel des Grundgesetzes -->
+            <h3>3. Übersicht der relevanten Artikel des Grundgesetzes</h3>
+            <p>Auszug aus dem Grundgesetz für die Bundesrepublik Deutschland (Fokus auf Artikel 1 bis 19 und weitere):
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artikel / Recht</th>
+                        <th>Artikel / Recht</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1: Schutz der Menschenwürde</td>
+                        <td>Gleichheit vor dem Gesetz</td>
+                    </tr>
+                    <tr>
+                        <td>2: Freiheit der Person</td>
+                        <td>4: Glaubens- und Gewissensfreiheit</td>
+                    </tr>
+                    <tr>
+                        <td>5: Freie Meinungsäußerung</td>
+                        <td>6: Schutz der Ehe und Familie</td>
+                    </tr>
+                    <tr>
+                        <td>7: Elternrechte, staatliche Schulaufsicht</td>
+                        <td>8: Versammlungsfreiheit</td>
+                    </tr>
+                    <tr>
+                        <td>9: Vereinigungsfreiheit</td>
+                        <td>10: Brief- und Telefongeheimnis</td>
+                    </tr>
+                    <tr>
+                        <td>11: Recht der Freizügigkeit</td>
+                        <td>12: Freie Berufswahl</td>
+                    </tr>
+                    <tr>
+                        <td>123: Wehrdienst/Zivildienst</td>
+                        <td>13: Unverletzlichkeit der Wohnung</td>
+                    </tr>
+                    <tr>
+                        <td>14: Eigentumsgarantie</td>
+                        <td>15: Überführung in Gemeineigentum</td>
+                    </tr>
+                    <tr>
+                        <td>16: Staatsangehörigkeit, Auslieferung</td>
+                        <td>168: Asylrecht</td>
+                    </tr>
+                    <tr>
+                        <td>17: Petitionsrecht</td>
+                        <td>18: Aberkennung von Grundrechten</td>
+                    </tr>
+                    <tr>
+                        <td>19: Rechtsweggarantie</td>
+                        <td>20: Volkssouveränität, Widerstandsrecht</td>
+                    </tr>
+                    <tr>
+                        <td>38: Wahlrecht</td>
+                        <td>Gleicher Zugang zu öffentlichen Ämtern</td>
+                    </tr>
+                    <tr>
+                        <td>101: Anspruch auf den gesetzlichen Richter / Schutz vor willkürlicher Verhaftung</td>
+                        <td>103: Anspruch auf rechtliches Gehör vor Gericht</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Aufgaben -->
+            <h3>4. Aufgaben zur Bearbeitung</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px; margin-top: 20px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>a)</strong> Wähle 3 der folgenden Grundrechte aus. Begründe, warum sie dir so wichtig
+                        sind, dass du nicht darauf verzichten wollen würdest.</li>
+                    <li><strong>b)</strong> Erkläre: Was ist mit Art. 11 „Freizügigkeit" gemeint?.</li>
+                </ul>
+            </div>
+
+
+        </section>
+        <!-- Start Pluralismus Block -->
+
+        <div class="card">
+            <h2>🤝 Thema: Pluralismus - Der Grundsatz jeder Demokratie</h2>
+
+            <!-- Abschnitt: Definition & Grundsätze -->
+            <h3>1. Was ist Pluralismus?</h3>
+            <p>Der Grundsatz für jede Demokratie ist der Pluralismus.</p>
+            <ul>
+                <li><strong>Definition:</strong> Mehrere verschiedene Meinungen und Gruppen in der Gesellschaft
+                    existieren nebeneinander und sind gleichberechtigt.</li>
+                <li><strong>Entscheidungsfindung:</strong> Die Mehrheit entscheidet, aber Minderheiten sind geschützt
+                    (Minderheitenschutz und Interessenausgleich).</li>
+                <li><strong>Voraussetzungen:</strong>
+                    <ul>
+                        <li><em>Kompromissfähigkeit:</em> Toleranz und Offenheit gegenüber anderen.</li>
+                        <li><em>Konfliktfähigkeit:</em> Interessenkonflikte müssen friedlich und sachlich ausgetragen
+                            werden.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Abschnitt: Demokratische Spielregeln -->
+            <h3>2. Die 8 demokratischen Spielregeln</h3>
+            <p>Gesellschaftliche Gruppen und Verbände (z.B. Arbeitgeber, Gewerkschaften, Bürgerinitiativen) konkurrieren
+                um Einfluss. Dabei müssen verbindliche Regeln eingehalten werden:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Regel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Wir haben das Recht, Ansprüche gegenüber dem Staat geltend zu machen.</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Wir verzichten bei der Verfolgung unserer Ziele auf Gewalt und politische Erpressung.</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Wir erkennen an, dass andere Gruppen auch Forderungen stellen dürfen.</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Wir nutzen unsere Macht nicht auf Kosten der Minderheiten aus.</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Wir bleiben sachlich bei der Kritik anderer Standpunkte und Interessen.</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Wir sind offen für Alternativen und Kompromisse.</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Wir sind bereit, Verantwortung zu übernehmen.</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Wir ordnen uns Mehrheitsentscheidungen unter.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Beantwortete Aufgabe (Karikatur) -->
+            <h3>3. Aufgabenbearbeitung (Karikatur M1)</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px; margin-bottom: 20px;">
+                <p><strong>Aufgabe:</strong> Übertragen Sie die in der Karikatur dargestellte Situation (Spinat-Essen)
+                    auf eine aktuelle politische Debatte.</p>
+                <p><strong>Lösung/Antwort:</strong><br>
+                    In der Karikatur wird eine Entscheidung (Spinat essen) formal "demokratisch" durch die Mehrheit
+                    (Mutti und Oma) getroffen, aber die eigentlich Betroffenen (die Kinder) fühlen sich übergangen.
+                    Zudem war der Prozess intransparent, da der Speiseplan "eine Woche im Keller" aushing. <br><br>
+                    <em>Übertragung auf die Realität:</em> Dies lässt sich z.B. auf große Infrastrukturprojekte (wie
+                    Stuttgart 21) oder weitreichende Klimaschutzgesetze übertragen. Oft haben Bürger oder jüngere
+                    Generationen das Gefühl, dass Politiker (symbolisiert durch Mutti/Oma) Entscheidungen über ihre
+                    Köpfe hinweg treffen. Auch wenn diese Entscheidungen formal durch Mehrheiten im Parlament
+                    legitimiert sind, fehlt oft die rechtzeitige, transparente Einbindung der Bürger, was zu Frustration
+                    und Protest führt, da die "demokratischen Spielregeln" der Offenheit verletzt scheinen.
+                </p>
+            </div>
+
+        </div>
+        <!-- Ende Pluralismus Block -->
+
+        <!-- Start Gewaltenteilung Block -->
+        <div class="card">
+            <h2>⚖️ Thema: Die Gewaltenteilung in Deutschland</h2>
+
+            <!-- Abschnitt: Die 3 Gewalten -->
+            <h3>1. Die drei Säulen der Staatsgewalt</h3>
+            <p>Um Machtmissbrauch zu verhindern, ist die staatliche Macht in drei voneinander unabhängige Bereiche
+                (Gewalten) aufgeteilt:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gewalt</th>
+                        <th>Bedeutung</th>
+                        <th>Beispiele (Institutionen)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Legislative</strong></td>
+                        <td>Die gesetzgebende Gewalt. Sie berät und verabschiedet neue Gesetze.</td>
+                        <td>Bundestag, Landtag</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Exekutive</strong></td>
+                        <td>Die ausführende Gewalt. Sie setzt die Gesetze um und führt den Staat.</td>
+                        <td>Regierung (Bundeskanzler, Minister), Polizei, Verwaltung</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Judikative</strong></td>
+                        <td>Die rechtsprechende Gewalt. Sie kontrolliert die Einhaltung der Gesetze und urteilt
+                            unabhängig.</td>
+                        <td>Gerichte, Bundesverfassungsgericht (BVerfG)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Grundsätze der Parlamentarischen Demokratie -->
+            <h3 style="margin-top: 30px;">2. Gewaltenteilung in der parlamentarischen Demokratie (Bsp. Deutschland)</h3>
+            <p>In Deutschland sind die Gewalten stark miteinander verzahnt (Gewaltenverschränkung). Hier sind die
+                wichtigsten Grundsätze:</p>
+
+            <ul>
+                <li><strong>Wahl des Regierungschefs:</strong> Das Parlament (der Bundestag) wählt den Regierungschef
+                    (den Bundeskanzler).</li>
+                <li><strong>Mehrheitsverhältnisse:</strong> Die Regierung stützt sich auf die Mehrheit der Abgeordneten
+                    im Bundestag, um ihre Gesetze verabschieden zu können.</li>
+                <li><strong>Fraktionsdisziplin:</strong> Eine Fraktion (die Abgeordneten einer Partei im Bundestag)
+                    stimmt in der Regel geschlossen ab, um die Handlungsfähigkeit der Regierung zu sichern.</li>
+                <li><strong>Rolle der Opposition:</strong> Die Parteien, die nicht an der Regierung beteiligt sind,
+                    haben die wichtige Aufgabe, die Regierung zu kontrollieren, zu kritisieren und politische
+                    Alternativen aufzuzeigen.</li>
+                <li><strong>Machtkontrolle (Misstrauensvotum):</strong> Das Parlament kann den Bundeskanzler und damit
+                    die gesamte Regierung durch ein sogenanntes <em>konstruktives Misstrauensvotum</em> absetzen, wenn
+                    es gleichzeitig einen neuen Kanzler wählt.</li>
+            </ul>
+
+            <!-- Abschnitt: Schaubild Kontrolle -->
+            <div
+                style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color); text-align: center; margin-top: 20px;">
+                <h4 style="margin-top: 0;">Die Kontroll- und Wahlmechanismen</h4>
+                <p style="font-size: 1.1em; color: var(--primary-color);">
+                    <strong>Die Bevölkerung (Wähler)</strong><br>
+                    ↓ wählt ↓<br>
+                    <strong>Den Bundestag</strong> (Legislative)<br>
+                    <em>(Aufgeteilt in Regierungsfraktionen und Opposition)</em><br>
+                    ↓ wählt und kontrolliert ↓<br>
+                    <strong>Bundeskanzler & Minister</strong> (Exekutive / Regierung)<br>
+                </p>
+                <p style="margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 15px;">
+                    Das <strong>Bundesverfassungsgericht (BVerfG)</strong> als höchste Instanz der <em>Judikative</em>
+                    kontrolliert wiederum, ob sich alle anderen Organe (Regierung, Bundestag und Gesetze) an das
+                    Grundgesetz halten.
+                </p>
+            </div>
+
+            <!-- Abschnitt: Entschlüsselung der Notizen -->
+            <h3 style="margin-top: 30px;">3. Das System von Wahl, Kontrolle und Ernennung</h3>
+            <p>In der parlamentarischen Demokratie gibt es klare Wege, wie Macht übertragen (Wahl/Ernennung) und wie sie
+                überwacht wird (Kontrolle).</p>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                <div
+                    style="flex: 1; min-width: 200px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #2980b9;">🗳️ 3x Wahl (Legitimation)</h4>
+                    <ol style="margin-bottom:0; padding-left: 20px;">
+                        <li>Die <strong>Bevölkerung</strong> wählt den <strong>Bundestag</strong>.</li>
+                        <li>Der <strong>Bundestag</strong> wählt den <strong>Bundeskanzler</strong>.</li>
+                        <li>Der <strong>Bundestag</strong> (und Bundesrat) wählen die Richter für das
+                            <strong>Bundesverfassungsgericht (BVerfG)</strong>.
+                        </li>
+                    </ol>
+                </div>
+
+                <div
+                    style="flex: 1; min-width: 200px; background-color: #fce4ec; padding: 15px; border-left: 4px solid #e91e63; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #c2185b;">👀 3x Kontrolle</h4>
+                    <ol style="margin-bottom:0; padding-left: 20px;">
+                        <li>Die <strong>Opposition</strong> im Bundestag kontrolliert die <strong>Regierung</strong>.
+                        </li>
+                        <li>Das Parlament (der gesamte <strong>Bundestag</strong>) kontrolliert die
+                            <strong>Regierung</strong>.
+                        </li>
+                        <li>Das <strong>BVerfG</strong> kontrolliert alle (Regierung, Bundestag und Gesetze).</li>
+                    </ol>
+                </div>
+
+                <div
+                    style="flex: 1; min-width: 200px; background-color: #fff9e6; padding: 15px; border-left: 4px solid #f39c12; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #d35400;">📜 1x Ernennung (nicht Erinnerung!)</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Der <strong>Bundeskanzler</strong> schlägt seine <strong>Minister</strong> vor, welche dann
+                            (durch den Bundespräsidenten) <strong>ernannt</strong> werden. Zusammen bilden sie die
+                            <strong>Regierung</strong>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Abschnitt: Schaubild -->
+            <div
+                style="background-color: #f8f9fa; padding: 30px; border-radius: 8px; border: 1px solid var(--border-color); text-align: center;">
+                <h4 style="margin-top: 0; text-align: left;">🔄 Schaubild: Zusammenwirken der Organe</h4>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 2px solid #3498db; border-radius: 8px; display: inline-block; width: 60%;">
+                    <strong>👥 Die Bevölkerung (Wahlvolk)</strong>
+                </p>
+
+                <p style="font-weight: bold; color: #3498db;">
+                    |<br>
+                    | <em>(wählt)</em><br>
+                    V
+                </p>
+
+                <!-- Bundestag Box, gesplittet in Regierungsfraktion und Opposition -->
+                <div
+                    style="background-color: white; padding: 15px; border: 2px solid var(--primary-color); border-radius: 8px; display: inline-block; width: 80%; text-align: center;">
+                    <strong style="font-size: 1.2em;">🏛️ Der Bundestag (Legislative)</strong><br>
+                    <div style="display: flex; justify-content: space-around; margin-top: 10px;">
+                        <div style="width: 45%; background-color: #eef2f5; padding: 10px; border-radius: 4px;">
+                            <strong>Regierungsfraktionen</strong><br>
+                            <small><em>(Unterstützen die Regierung)</em></small>
+                        </div>
+                        <div
+                            style="width: 45%; background-color: #fce4ec; padding: 10px; border-radius: 4px; border: 1px dashed #e91e63;">
+                            <strong>Opposition</strong><br>
+                            <small><em>(Kontrolliert die Regierung)</em></small>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-weight: bold; color: #3498db;">
+                    |<br>
+                    | <em>(wählt & kontrolliert)</em><br>
+                    V
+                </p>
+
+                <!-- Regierungs Box -->
+                <div
+                    style="background-color: white; padding: 15px; border: 2px solid #e67e22; border-radius: 8px; display: inline-block; width: 60%;">
+                    <strong style="font-size: 1.2em;">💼 Die Bundesregierung (Exekutive)</strong><br>
+                    <p style="margin: 10px 0 0 0;">
+                        <strong>Bundeskanzler</strong><br>
+                        <em>(wird ernannt & schlägt Minister vor)</em><br>
+                        +<br>
+                        <strong>Minister</strong>
+                    </p>
+                </div>
+
+                <p style="font-weight: bold; color: #9b59b6;">
+                    |<br>
+                    | <em>(kontrolliert alle Organe & Gesetze)</em><br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 2px solid #9b59b6; border-radius: 8px; display: inline-block; width: 60%;">
+                    <strong>⚖️ Bundesverfassungsgericht / BVerfG (Judikative)</strong>
+                </p>
+
+            </div>
+
+        </div>
+        <!-- Ende Gewaltenteilung Block -->
+
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 2: POLITISCHE MITWIRKUNG (PARTIZIPATION)            -->
+        <!-- ========================================================= -->
+        <div class="block-title bg-block2">🟢 Block 2: Politische Mitwirkung (Partizipation)</div>
+        <!-- 4. PARTEIEN -->
+        <div class="card">
+            <h2>🗳️ Thema: Parteien in Deutschland</h2>
+
+            <h3>1. Welche Rolle spielen Parteien in der Politik?</h3>
+            <p>Die rechtliche Grundlage für Parteien bildet <strong>Art. 21 GG</strong>.</p>
+            <ul>
+                <li><strong>Willensbildung:</strong> Sie erarbeiten Vorschläge und Lösungen für aktuelle Probleme.</li>
+                <li><strong>Repräsentation:</strong> Sie vertreten Interessen in der Öffentlichkeit.</li>
+                <li><strong>Machtausübung:</strong> Sie streben die Übernahme von politischen Ämtern an.</li>
+                <li><strong>Pflichten:</strong> Innere demokratische Ordnung, Rechenschaft über Finanzen. Bei Gefährdung
+                    der Demokratie droht ein <mark>Parteiverbot</mark>.</li>
+            </ul>
+
+            <h3>2. Wie finanzieren sich Parteien?</h3>
+            <ul>
+                <li><span class="badge">Mitgliedsbeiträge</span> Regelmäßige Zahlungen der Mitglieder.</li>
+                <li><span class="badge">Spenden</span> Finanzielle Zuwendungen von Privatpersonen oder Unternehmen.</li>
+                <li><span class="badge">Staatliche Unterstützung</span> Zuschüsse vom Staat (z. B. pro Wählerstimme).
+                </li>
+            </ul>
+
+            <h3>3. Parteien im Vergleich (Themenfelder)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Themenfeld</th>
+                        <th>CDU / CSU</th>
+                        <th>SPD</th>
+                        <th>Bündnis 90 / Die Grünen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Wirtschaft & Finanzen</strong></td>
+                        <td>Für Arbeitsplätze sorgen, Schuldenbremse einhalten. Keine Steuererhöhungen.</td>
+                        <td>50 Milliarden Euro pro Jahr in Zukunftsfelder investieren.</td>
+                        <td>Schuldenbremse reformieren, höhere Steuern für Besserverdienende.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Klimaschutz & Umwelt</strong></td>
+                        <td>"Technologieoffenheit", Verbote vermeiden.</td>
+                        <td>Klimaneutralität bis 2045, Ausbau erneuerbarer Energien.</td>
+                        <td>Massiver Ausbau Solar/Wind, Kohleausstieg auf 2030 vorziehen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Arbeit & Soziales</strong></td>
+                        <td>Lohnnebenkosten deckeln, flexible Arbeitszeiten.</td>
+                        <td>Sicherung des Rentenniveaus, starker Mindestlohn.</td>
+                        <td>Garantiesicherung, Anhebung Mindestlohn, Kindergrundsicherung.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Start Verbände Block -->
+        <div class="card">
+            <h2>📣 Thema: Verbände, Bürgerinitiativen und NGOs</h2>
+
+            <!-- Abschnitt: Definitionen -->
+            <h3>1. Formen der Interessenvertretung</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Art</th>
+                        <th>Definition & Merkmale</th>
+                        <th>Beispiele</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Verbände</strong></td>
+                        <td>Dauerhafte, organisierte Zusammenschlüsse von wirtschaftlichen oder gesellschaftlichen
+                            Gruppen.</td>
+                        <td>ADAC, DRK, DGB, ver.di</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NGOs</strong></td>
+                        <td>Nicht-Regierungsorganisationen (Non-Governmental Organizations). Oft international vernetzte
+                            Organisationen.</td>
+                        <td>Greenpeace, Transparency International, FIFA</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bürgerinitiativen</strong></td>
+                        <td>Meist lokal (vor Ort) und nur ein lockerer Zusammenschluss auf Zeit. Ziel: Die Bevölkerung
+                            auf ein ganz bestimmtes Problem aufmerksam machen.</td>
+                        <td>Proteste gegen Stuttgart 21, Initiativen für/gegen Windkraftanlagen</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Einfluss und Methoden -->
+            <h3>2. Einfluss auf die Politik (Lobbyismus)</h3>
+            <p>Die Hauptaufgabe von Verbänden ist die Vertretung und Durchsetzung der Interessen ihrer Mitglieder durch
+                Einflussnahme auf die Politik.</p>
+            <ul>
+                <li><strong>Methoden:</strong> Spenden an Parteien, Organisation von Demonstrationen, Verfassen von
+                    Stellungnahmen zu Gesetzen, direkte Kontakte zu Politikern, oder Verbandsmitglieder sitzen sogar
+                    selbst als Abgeordnete im Parlament.</li>
+            </ul>
+
+            <!-- Abschnitt: Pro und Contra Tabelle -->
+            <table style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th style="color: green;">Vorteile für die Politik</th>
+                        <th style="color: red;">Nachteile für die Politik</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bringen spezifische Interessen in die Politik ein (näher am Bürger).</td>
+                        <td>Oft stehen finanzstarke Firmen/Unternehmen dahinter, was zu Ungleichgewicht führt.</td>
+                    </tr>
+                    <tr>
+                        <td>Kostenlose Beratung von Politikern durch öffentliches Expertenwissen.</td>
+                        <td>Wenig Kontrolle und mangelnde Transparenz (Gefahr von Korruption).</td>
+                    </tr>
+                    <tr>
+                        <td>Entlasten den Staat, da sie Probleme filtern und bündeln.</td>
+                        <td>Blockade wichtiger, allgemeiner Entscheidungen, da sie rücksichtslos nur ihre eigenen
+                            Interessen im Blick haben.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Beantwortete Zusatzfrage (Von der KI ergänzt) -->
+            <h3 style="margin-top: 30px;">3. Was ist der Unterschied zwischen Parteien und Verbänden?</h3>
+            <div style="background-color: #fff3e0; padding: 15px; border-left: 4px solid #ff9800; border-radius: 4px;">
+                <p><em>(Diese Antwort füllt dein leeres Aufgabenfeld auf dem Arbeitsblatt aus):</em></p>
+                <ul>
+                    <li><strong>Parteien:</strong> Wollen bei Wahlen antreten, um <em>direkte politische Macht</em>
+                        (Regierungsverantwortung) zu übernehmen. Sie müssen zu <em>allen</em> politischen Themen
+                        (Umwelt, Wirtschaft, Soziales, Außenpolitik) eine Meinung und ein Programm haben.</li>
+                    <li><strong>Verbände:</strong> Treten <em>nicht</em> bei Wahlen an und wollen nicht regieren. Sie
+                        wollen die Politik nur von außen beeinflussen (Lobbyismus). Sie vertreten in der Regel nur ein
+                        <em>einziges, sehr spezifisches Teilinteresse</em> (z.B. nur die Interessen von Autofahrern, nur
+                        Tierschutz oder nur Arbeitnehmerrechte).
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Start Adressaten und Methoden der Verbände (Buch S. 114) -->
+            <div class="card">
+                <h2>🎯 Ergänzung: Wie und wo Verbände Einfluss nehmen (Lobbyismus)</h2>
+                <p>Um die Ziele ihrer Mitglieder durchzusetzen, richten sich Verbände an verschiedene
+                    <strong>Adressaten</strong> im politischen System und nutzen dabei unterschiedliche
+                    <strong>Mittel</strong> (Methoden).
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Adressat (Zielgruppe)</th>
+                            <th>Eingesetzte Mittel und Methoden</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Ministerialbürokratie</strong> (Ministerien)</td>
+                            <td>Kontakte pflegen, Informationen und Eingaben liefern, personelle Durchsetzung anstreben.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Politische Parteien</strong></td>
+                            <td>Stimmenpakete in Aussicht stellen, finanzielle Spenden, personelle Durchsetzung,
+                                Eingaben,
+                                sowie die Unterstützung (oder Sabotage) von geplanten Maßnahmen.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bundesregierung & Bundestag</strong></td>
+                            <td>Personelle Durchsetzung und das Einbringen von exklusivem Sachverstand (Expertenwissen)
+                                bei
+                                der Gesetzgebung.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Öffentliche Meinung</strong> (Die Bürger)</td>
+                            <td>Informationen verbreiten, Stellungnahmen veröffentlichen, Demonstrationen organisieren
+                                und
+                                eigene Medien nutzen, um Druck auf die Politik aufzubauen.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Start Parteien Block -->
+        <div class="card">
+            <h2>🗳️ Thema: Parteien in Deutschland</h2>
+
+            <!-- Abschnitt: Rolle und Aufgaben -->
+            <h3>1. Welche Rolle spielen Parteien in der Politik?</h3>
+            <p>Die rechtliche Grundlage für Parteien in Deutschland bildet der <strong>Artikel 21 des Grundgesetzes
+                    (GG)</strong>.</p>
+            <ul>
+                <li><strong>Willensbildung:</strong> Die Parteien wirken bei der politischen Willensbildung des Volkes
+                    mit. Sie erarbeiten Vorschläge und Lösungen für aktuelle Probleme.</li>
+                <li><strong>Repräsentation:</strong> Sie vertreten Interessen in der Öffentlichkeit
+                    (Öffentlichkeitsarbeit).</li>
+                <li><strong>Machtausübung:</strong> Sie streben die Übernahme von politischen Ämtern und
+                    Regierungsverantwortung an.</li>
+                <li><strong>Pflichten:</strong> Ihre innere Ordnung muss demokratischen Grundsätzen entsprechen. Zudem
+                    müssen sie über die Herkunft ihrer Mittel (Finanzen) öffentlich Rechenschaft ablegen. Wer die
+                    demokratische Grundordnung gefährdet, kann vom Bundesverfassungsgericht verboten werden.</li>
+            </ul>
+
+            <!-- Abschnitt: Parteifinanzierung -->
+            <h3>2. Wie finanzieren sich Parteien?</h3>
+            <p>Die Finanzierung stützt sich hauptsächlich auf drei Säulen:</p>
+            <ul>
+                <li><strong>Mitgliedsbeiträge:</strong> Regelmäßige Zahlungen der Parteimitglieder.</li>
+                <li><strong>Spenden:</strong> Finanzielle Zuwendungen von Privatpersonen oder Unternehmen.</li>
+                <li><strong>Staatliche Unterstützung:</strong> Zuschüsse vom Staat (z. B. ein bestimmter Betrag pro
+                    erhaltener Wählerstimme bei Wahlen).</li>
+            </ul>
+
+            <!-- Abschnitt: Parteienvergleich (Tabelle) -->
+            <h3>3. Parteien im Vergleich (Beispielhafte Themenfelder)</h3>
+            <p><em>Hinweis: Das erste Thema basiert auf deinen Notizen, die Themen 2 und 3 wurden ergänzt, um die
+                    Aufgabe ("Wähle 3 politische Themenfelder") zu vervollständigen.</em></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Themenfeld</th>
+                        <th>CDU / CSU</th>
+                        <th>SPD</th>
+                        <th>Bündnis 90 / Die Grünen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Thema 1 aus den handschriftlichen Notizen -->
+                    <tr>
+                        <td><strong>1. Wirtschaft, Steuern & Finanzen</strong></td>
+                        <td>Für Arbeitsplätze sorgen und die Schuldenbremse einhalten. Steuererhöhungen werden
+                            abgelehnt, da sie nach Corona ein Schaden für die Wirtschaft seien.</td>
+                        <td>Wollen 50 Milliarden Euro pro Jahr in Zukunftsfelder wie Klimaschutz, Mobilität,
+                            Digitalisierung und Gesundheit investieren.</td>
+                        <td>Schuldenbremse reformieren und 50 Mrd. Euro in Zukunftstechnologien investieren. Höhere
+                            Steuern für Besserverdienende (z.B. 45% ab 100.000/200.000 Euro). Förderung von Gründern mit
+                            bis zu 25.000 Euro. Mehr Geld für Bildung.</td>
+                    </tr>
+                    <!-- Ergänztes Thema 2 -->
+                    <tr>
+                        <td><strong>2. Klimaschutz & Umwelt</strong></td>
+                        <td>Setzen auf "Technologieoffenheit" und den Emissionshandel. Wollen Verbote (z.B. von
+                            Verbrennermotoren) vermeiden und Wirtschaftlichkeit mit Klimaschutz vereinen.</td>
+                        <td>Streben Klimaneutralität bis 2045 an. Der Ausbau der erneuerbaren Energien soll stark
+                            gefördert, aber gleichzeitig für Bürger sozial abgefedert werden.</td>
+                        <td>Fokus auf massiven und schnellen Ausbau von Wind- und Solarenergie. Der Kohleausstieg soll
+                            idealerweise auf 2030 vorgezogen werden. Einführung eines "Klimageldes" als Ausgleich.</td>
+                    </tr>
+                    <!-- Ergänztes Thema 3 -->
+                    <tr>
+                        <td><strong>3. Arbeit & Soziales</strong></td>
+                        <td>Wollen Lohnnebenkosten für Unternehmen deckeln und Arbeitszeiten flexibler gestalten, um die
+                            Wirtschaft zu entlasten.</td>
+                        <td>Fokus auf die Sicherung des Rentenniveaus, die Stärkung des Mindestlohns und den Ausbau des
+                            Bürgergelds sowie bezahlbaren Wohnraum.</td>
+                        <td>Fordern eine "Garantiesicherung" anstelle des Bürgergeldes, eine Anhebung des Mindestlohns
+                            und die Einführung einer starken Kindergrundsicherung zur Bekämpfung von Armut.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Ende Parteien Block -->
+        <!-- Start Direkte vs. Indirekte Demokratie Block -->
+        <div class="card">
+            <h2>🗳️ Thema: Direkte vs. indirekte Demokratie</h2>
+
+            <!-- Abschnitt: Vergleich Baden-Württemberg und Schweiz -->
+            <h3>1. Volksabstimmungen im Vergleich</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Deutschland (am Beispiel Baden-Württemberg)</th>
+                        <th>Schweiz (Direkte Demokratie)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Volksabstimmungen sind selten und meist nur auf Länderebene zulässig.</td>
+                        <td>Das Volk ist der Souverän (oberste politische Instanz) und belegt weltweit Platz 1 bei
+                            aktiver politischer Beteiligung.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 Schritte zum Gesetz:</strong><br>
+                            1. Zulassungsantrag (z.B. 10.000 Unterschriften)<br>
+                            2. Volksbegehren (10 % der Wahlberechtigten)<br>
+                            3. Volksabstimmung (mind. 20 % Zustimmung nötig)
+                        </td>
+                        <td><strong>2 Hauptwege:</strong><br>
+                            1. Volksinitiative (Verfassungsänderung, 100.000 Unterschriften)<br>
+                            2. Fakultatives Referendum (gegen ein Gesetz, 50.000 Unterschriften)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ausgeschlossen sind Themen wie Abgaben (Steuern), Gehälter und der Staatshaushalt (Beispiel:
+                            Kostenlose Kita wurde abgelehnt, da es den Haushalt belastet).</td>
+                        <td>Abstimmung bis zu 4 Mal jährlich über ca. 15 Themen (Stimmbeteiligung ca. 45,4 %). Jeder
+                            kann an der Urne oder brieflich abstimmen.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Chancen und Risiken -->
+            <h3>2. Chancen und Risiken von Volksabstimmungen</h3>
+            <ul>
+                <li><strong>Vorteile (+):</strong> Mehr Bürgernähe; schlechte Entscheidungen von Politikern können vom
+                    Volk nochmal überarbeitet oder gestoppt werden.</li>
+                <li><strong>Nachteile (-):</strong> Kompromisse sind oft schwer zu finden (es gibt meist nur "Ja" oder
+                    "Nein"); bei Fachthemen fehlt den Bürgern oft das Expertenwissen; teilweise zu große Erwartungen.
+                </li>
+            </ul>
+
+            <!-- Abschnitt: Beantwortete Aufgaben -->
+            <h3>3. Aufgabenbearbeitung</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+                <p><strong>Welche Themen eignen sich für Volksabstimmungen?</strong><br>
+                    <em>Geeignet:</em> Themen, die jeden im Alltag direkt betreffen (z.B. durch Kosten oder
+                    Vorschriften).<br>
+                    <em>Nicht geeignet:</em> Wissenschaftliche Themen (da das Faktenwissen fehlt), Grundrechte
+                    (Minderheitenschutz, z.B. Religionsfreiheit darf nicht per Mehrheit abgeschafft werden) und komplexe
+                    Themen wie Verteidigung oder Sicherheit (fehlender Überblick). Zudem sind oft lokale Bedingungen
+                    sehr unterschiedlich, weshalb bundesweite Vorgaben schwierig sind.
+                </p>
+
+                <p><strong>Warum gibt es ein Quorum (Mindestwahlbeteiligung)?</strong><br>
+                    Eine kleine, extrem motivierte Minderheit (z.B. nur 20 % der Bevölkerung) soll keine Entscheidungen
+                    treffen dürfen, die dann für die schweigende Mehrheit gelten. Ideal wäre eine Wahlbeteiligung von
+                    über 50 %, das Problem ist jedoch, dass es in der Realität oft sehr schwierig ist, so viele Leute
+                    für ein politisches Fachthema zu motivieren.</p>
+            </div>
+        </div>
+        <!-- Ende Direkte Demokratie Block -->
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 3: VERFASSUNGSORGANE UND GESETZGEBUNG               -->
+        <!-- ========================================================= -->
+        <div class="block-title bg-block3">📙 Block 3: Verfassungsorgane und Gesetzgebung</div>
+
+        <!-- Start Verfassungsorgane & Gesetzgebung Block -->
+        <div class="card">
+            <h2>🏛️ Thema: Politischer Entscheidungsprozess (Verfassungsorgane)</h2>
+
+            <!-- Abschnitt: Bundeskanzler & Regierung -->
+            <h3>1. Bundesregierung und Bundeskanzler</h3>
+            <p>Die <strong>Aufgaben der Bundesregierung</strong> umfassen vor allem die Verwaltung (Ausführung von
+                Gesetzen) und das Erarbeiten bzw. Vorschlagen neuer Gesetze.</p>
+
+            <table style="margin-top: 10px;">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Die Stellung des Bundeskanzlers</th>
+                    </tr>
+                    <tr>
+                        <th style="color: green;">Starke Stellung (Macht)</th>
+                        <th style="color: red;">Schwache Stellung (Grenzen)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gibt die Richtlinien der Politik vor (Richtlinienkompetenz).</td>
+                        <td>Ist abhängig von seiner Koalition (Regieren mit anderen Parteien erzwingt Kompromisse).</td>
+                    </tr>
+                    <tr>
+                        <td>Schlägt die Minister vor.</td>
+                        <td>Gesetze brauchen immer eine Mehrheit im Parlament (Bundestag).</td>
+                    </tr>
+                    <tr>
+                        <td>Kann das Parlament auflösen (durch die Vertrauensfrage).</td>
+                        <td>Kann durch ein konstruktives Misstrauensvotum des Bundestages abgesetzt werden (Kanzler wird
+                            gestürzt).</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Muss oft Konflikte in der eigenen Partei moderieren.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Bundestag -->
+            <h3>2. Die Aufgaben des Bundestages</h3>
+            <ul>
+                <li><strong>Gesetzgebung:</strong> Der Bundestag debattiert und verabschiedet Bundesgesetze (siehe
+                    Schaubild).</li>
+                <li><strong>Wahlen:</strong> Wählt den Bundeskanzler und (zusammen mit anderen Vertretern in der
+                    Bundesversammlung) den Bundespräsidenten. Er kann den Kanzler auch abwählen (Misstrauensvotum).</li>
+                <li><strong>Kontrolle:</strong> Die Opposition (die Parteien im Bundestag, die nicht regieren)
+                    kontrolliert die Arbeit der Bundesregierung.</li>
+            </ul>
+
+            <!-- Abschnitt: Bundesrat & Föderalismus -->
+            <h3>3. Der Bundesrat und der Föderalismus</h3>
+            <p>Deutschland ist ein <strong>Bundesstaat</strong> (Föderalismus). Das bedeutet, das Land ist in
+                Bundesländer aufgeteilt und die Macht wird zwischen den Ländern (z.B. BW, Bayern) und dem Zentralstaat
+                (Bund) geteilt. Im Gegensatz dazu gibt es in einem reinen Zentralstaat (wie Frankreich) keine
+                Bundesländer und nur ein Parlament.</p>
+            <ul>
+                <li><strong>Zusammensetzung des Bundesrates:</strong> Er besteht aus Vertretern der Landesregierungen.
+                    Wir Bürger können den Bundesrat also nicht direkt wählen.</li>
+                <li><strong>Stimmenverteilung:</strong> Jedes Bundesland hat je nach Größe (Einwohnerzahl) 3 bis 6
+                    Stimmen. Insgesamt gibt es 69 Stimmen (die absolute Mehrheit liegt bei 35).</li>
+            </ul>
+
+            <!-- Abschnitt: Gesetzgebungs-Begriffe -->
+            <h3>4. Begriffe zur Gesetzgebung</h3>
+            <ul>
+                <li><strong>Zustimmungsgesetz:</strong> Ein Gesetz, dem der Bundesrat zwingend zustimmen muss. Dies
+                    betrifft Gesetze, die die Bundesländer direkt betreffen (z.B. Bildungssystem, Lohnsteuer, Verkehr).
+                </li>
+                <li><strong>Einspruchsgesetz (Einfaches Gesetz):</strong> Ein Gesetz, bei dem der Bundesrat nur
+                    Einspruch einlegen kann. Der Bundestag kann das Gesetz am Ende trotzdem durchsetzen (z.B. bei
+                    Außenpolitik oder Verteidigung).</li>
+                <li><strong>Ausschüsse im Bundestag:</strong> Hier werden Gesetzentwürfe vorab fachlich beraten. Für
+                    jedes Themengebiet gibt es einen Ausschuss (z.B. für Bildung, Finanzen). Alle im Bundestag
+                    vertretenen Parteien sitzen in diesen Ausschüssen.</li>
+            </ul>
+            <!-- Start Schaubild Gesetzgebung (Text-Version) -->
+
+            <div class="card" style="text-align: center; background-color: #f8f9fa; padding: 30px; border-radius: 8px;">
+
+                <h2 style="text-align: left; margin-bottom: 30px;">🔄 Der Weg eines Gesetzes</h2>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>1. INITIATIVE (Wer schlägt das Gesetz vor?)</strong><br>
+                    [ Bundesregierung ] oder [ Bundesrat ] oder [ Bundestag ]
+                </p>
+
+                <p style="font-weight: bold; color: var(--secondary-color);">
+                    |<br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>2. ERSTE LESUNG (im Bundestag)</strong><br>
+                    Vorstellung des Gesetzentwurfs im Plenum.
+                </p>
+
+                <p style="font-weight: bold; color: var(--secondary-color);">
+                    |<br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>3. AUSSCHÜSSE (im Bundestag)</strong><br>
+                    Fachpolitiker aller Parteien beraten den Entwurf im Detail.
+                </p>
+
+                <p style="font-weight: bold; color: var(--secondary-color);">
+                    |<br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>4. ZWEITE & DRITTE LESUNG (im Bundestag)</strong><br>
+                    Abschließende Debatte und ABSTIMMUNG im Plenum.<br>
+                    <small><em>(Bei Ablehnung ist das Gesetz gescheitert)</em></small>
+                </p>
+
+                <p style="font-weight: bold; color: var(--secondary-color);">
+                    | <br>
+                    <em>(Bei Annahme)</em><br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>5. BUNDESRAT (Die Länderkammer prüft)</strong><br>
+                    <strong>Einspruchsgesetz:</strong> Bundesrat kann Einspruch einlegen, das Gesetz kann aber trotzdem
+                    kommen.<br>
+                    <strong>Zustimmungsgesetz:</strong> Bundesrat MUSS zustimmen.
+                </p>
+
+                <p style="font-weight: bold; color: #e74c3c;">
+                    |<br>
+                    |----&gt; VERMITTLUNGSAUSSCHUSS <em>(Sucht bei Konflikten einen Kompromiss)</em><br>
+                    |<br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: white; padding: 15px; border: 1px solid var(--border-color); border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>6. BUNDESPRÄSIDENT</strong><br>
+                    Prüft das Gesetz auf seine Verfassungsmäßigkeit und unterschreibt es.
+                </p>
+
+                <p style="font-weight: bold; color: var(--secondary-color);">
+                    |<br>
+                    V
+                </p>
+
+                <p
+                    style="background-color: #d4edda; color: #155724; padding: 15px; border: 1px solid #c3e6cb; border-radius: 8px; display: inline-block; width: 80%;">
+                    <strong>7. VERKÜNDUNG</strong><br>
+                    Veröffentlichung im Bundesgesetzblatt. Das Gesetz ist nun gültig!
+                </p>
+
+            </div>
+            <!-- Ende Schaubild Gesetzgebung -->
+        </div>
+        <!-- Ende Verfassungsorgane Block -->
+
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 4: GEFAHREN FÜR DIE DEMOKRATIE                      -->
+        <!-- ========================================================= -->
+        <div class="block-title bg-block4">🔴 Block 4: Gefahren für die Demokratie</div>
+        <!-- Start Populismus Block -->
+        <div class="card">
+            <h2>📢 Thema: Populismus - Politik ohne Rücksicht auf andere?</h2>
+
+            <h3>1. Überblick: Was ist Populismus?</h3>
+            <ul>
+                <li><strong>Merkmale:</strong> Kritik an "traditionellen" Parteien, Themen sind oft Anti-Migration, und
+                    Populisten behaupten, den "wahren Willen des Volkes" zu kennen.</li>
+                <li><strong>Probleme in der Demokratie:</strong>
+                    1) Es gibt nicht nur <em>den einen</em> Willen des Volkes (Verstoß gegen den Pluralismus).
+                    2) Grundrechte und Schutz gelten für <em>alle</em> Menschen in einer Demokratie
+                    (Minderheitenschutz).
+                </li>
+            </ul>
+
+            <p>Eine pluralistische Demokratie muss tolerant sein, darf sich aber von ihren Feinden nicht zerstören
+                lassen. Aus den Fehlern der Weimarer Republik hat das Grundgesetz Mechanismen entwickelt, um sich selbst
+                zu schützen.</p>
+
+            <h3>1. Prinzipien der wehrhaften Demokratie</h3>
+            <ul>
+                <li><strong>Ewigkeitsklausel (Art. 79 Abs. 3 GG):</strong> Die Grundprinzipien des Staates
+                    (Menschenwürde, Demokratie, Bundesstaatlichkeit, Rechtsstaatlichkeit) dürfen <em>niemals</em>
+                    abgeschafft oder geändert werden – auch nicht mit einer 100%igen Mehrheit.</li>
+                <li><strong>Parteiverbot (Art. 21 GG):</strong> Parteien, die darauf abzielen, die freiheitliche
+                    demokratische Grundordnung zu beeinträchtigen oder zu beseitigen, können verboten werden.
+                    (Entscheidet <em>nur</em> das Bundesverfassungsgericht).</li>
+                <li><strong>Verwirkung von Grundrechten (Art. 18 GG):</strong> Wer bestimmte Grundrechte (z.B. Meinungs-
+                    oder Versammlungsfreiheit) zum Kampf gegen die Demokratie missbraucht, kann diese Rechte verlieren.
+                </li>
+            </ul>
+            <!-- Abschnitt: Beantwortete Aufgaben (Videos) -->
+            <h3>2. Beantwortung der Leitfragen (Video-Auswertung)</h3>
+            <div
+                style="background-color: #fff9e6; padding: 15px; border-left: 4px solid #f39c12; border-radius: 4px; margin-bottom: 20px;">
+                <p><strong>Um was geht es beim Populismus?</strong><br>
+                    Beim Populismus geht es darum, die Gesellschaft in zwei Gruppen zu spalten: ein vermeintlich
+                    "reines, homogenes Volk" und eine "korrupte, abgehobene Elite". Populisten tun so, als seien nur sie
+                    die wahre Stimme dieses Volkes.</p>
+
+                <p><strong>Welche Lösungen bieten populistische Parteien an?</strong><br>
+                    Sie bieten meist stark vereinfachte Scheinlösungen für hochkomplexe Probleme an (z. B. "Grenzen
+                    komplett zu" als einzige Lösung für wirtschaftliche oder gesellschaftliche Probleme).</p>
+
+                <p><strong>Gegen wen sind Populisten?</strong><br>
+                    Gegen das politische Establishment (Regierung, traditionelle Parteien), gegen etablierte Medien
+                    ("Lügenpresse"), gegen Experten/Wissenschaftler und fast immer gegen Minderheiten (wie z. B.
+                    Migranten), die als Sündenböcke für Probleme genutzt werden.</p>
+
+                <p><strong>Wie gehen andere Politiker damit um?</strong><br>
+                    Andere Politiker tun sich oft schwer. Einerseits versuchen sie, populistischer Rhetorik mit
+                    komplexen Sachargumenten zu begegnen, was oft weniger emotional verfängt. Andererseits versuchen sie
+                    (wie Wolfgang Schäuble anmerkt), die tieferliegenden Probleme effizienter zu lösen, um den
+                    Populisten den Nährboden zu entziehen.</p>
+            </div>
+
+            <!-- Abschnitt: Beantwortete Aufgaben (AfD Arbeitsblatt) -->
+            <h3>3. Fallbeispiel: AfD in Deutschland (Aufgaben M3)</h3>
+            <div style="background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px;">
+                <p><strong>a) Gründe für Rechtspopulismus (laut Texten M3):</strong><br>
+                    - <em>Globalisierung & Modernisierung:</em> Menschen fühlen sich als "Verlierer" des
+                    wirtschaftlichen und digitalen Wandels, während sich Eliten scheinbar entfremden.<br>
+                    - <em>Neue Konfliktlinien:</em> Streitfragen über offene Grenzen, Abgabe von nationaler Souveränität
+                    (z.B. an die EU) und die Angst, dass Minderheitenrechte die "Leitkultur" der Mehrheit
+                    verdrängen.<br>
+                    - <em>Demokratische Schwerfälligkeit:</em> Das Gefühl, dass demokratische Prozesse (auch in
+                    Brüssel/EU) zu langsam und ineffizient sind, um drängende Probleme zu lösen.</p>
+
+                <p><strong>b) Aktuelle Wahlergebnisse und Umfragen (Recherche):</strong><br>
+                    <em>(Hinweis: Aktueller Stand je nach Zeitpunkt einfügen)</em> Die AfD hat sich in Deutschland fest
+                    etabliert. Bundesweit erreicht sie in Umfragen oft Werte zwischen 15 % und 20 %. In einigen
+                    ostdeutschen Bundesländern (wie Sachsen oder Thüringen) wird sie bei Wahlen oft stärkste oder
+                    zweitstärkste Kraft mit Ergebnissen von teils über 30 %.
+                </p>
+
+                <p><strong>c) Das "Zusammengehörigkeitsgefühl" der AfD:</strong><br>
+                    Die AfD appelliert an ein starkes, exklusives nationales "Wir" ("Wir sind das Volk"). Dieses Gefühl
+                    wird vor allem durch die Abgrenzung nach außen (gegen Migranten/Flüchtlinge) und nach "oben" (gegen
+                    die Altparteien/Eliten) erzeugt. <br>
+                    <em>Beurteilung:</em> Ja, sie ist damit bei bestimmten Wählergruppen sehr erfolgreich, da sie
+                    Menschen, die sich unverstanden oder ängstlich fühlen, eine scheinbar sichere Identität und einen
+                    klaren Sündenbock anbietet.
+                </p>
+
+                <p><strong>d) Ursprung der Erfolge & Konsequenzen:</strong><br>
+                    - <em>Woher kommen die Erfolge?</em> Aus der echten Unzufriedenheit über ungelöste Krisen
+                    (Inflation, Migration, Infrastruktur) und dem Versagen etablierter Parteien, diese Ängste ernst zu
+                    nehmen und verständlich zu kommunizieren.<br>
+                    - <em>Konsequenzen:</em> Die Gesellschaft polarisiert sich stark. Politische Debatten werden
+                    aggressiver, Kompromisse (wie im Pluralismus gefordert) werden schwieriger. Langfristig kann dies
+                    die demokratischen Institutionen schwächen und Minderheitenrechte in Gefahr bringen, wenn
+                    pluralistische Grundsätze ausgehöhlt werden.</p>
+            </div>
+        </div>
+
+        <!-- Start Extremismus Block -->
+        <div class="card">
+            <h2>⚠️ Thema: Extremismus - eine Gefahr für die Demokratie</h2>
+
+            <p><strong>Definition:</strong> Extremismus ist eine radikale politische Haltung, die den demokratischen
+                Rechtsstaat beseitigen will. Alle Extremisten haben gemeinsam, dass sie die Demokratie ablehnen[cite:
+                9].</p>
+
+            <!-- Abschnitt: Vergleich Rechts- und Linksextremismus -->
+            <h3>1. Vergleich: Rechtsextremismus vs. Linksextremismus</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rechtsextremismus</th>
+                        <th>Linksextremismus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Feindbild:</strong> Ausländer, Menschen mit Migrationshintergrund, Juden, sowie
+                            demokratische Politiker ("Volksverräter").</td>
+                        <td><strong>Feindbild:</strong> Der Staat, die Polizei, Reiche Menschen ("Bonzen"), das
+                            "kapitalistische System" und Rechte.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ideologie:</strong> NS-Ideologie (Nationalsozialismus) als Vorbild, Rassenlehre,
+                            Antisemitismus. Glaube an die natürliche Überlegenheit der Deutschen.</td>
+                        <td><strong>Ideologie:</strong> Wollen die Menschen vom kapitalistischen System befreien.
+                            Streben eine Gesellschaft ohne Privateigentum und ohne Staat an.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gewaltrichtung (laut Olaf Sundermeyer):</strong> Richtet sich nach <em>"unten"</em>
+                            – gegen Schwächere und klassische Opfergruppen.</td>
+                        <td><strong>Gewaltrichtung (laut Olaf Sundermeyer):</strong> Richtet sich nach <em>"oben"</em> –
+                            gegen den Staat und das Kapital.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vorgehen & Ziele:</strong> Anschläge auf Flüchtlingsunterkünfte, Synagogen (z.B.
+                            Halle) und Migranten. Agieren in abgeschotteten Gruppen.</td>
+                        <td><strong>Vorgehen & Ziele:</strong> Agieren in "autonomen Gruppen" (z.B. Bezugsgruppen im
+                            Straßenkampf wie beim G20-Gipfel). Angriffe auf Symbole des Reichtums (Banken, Autos),
+                            Werfen von Steinen/Flaschen.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Terrorismus -->
+            <h3>2. Internationaler Terrorismus</h3>
+            <ul>
+                <li><strong>Ziel:</strong> Angst und Schrecken in einem Staat oder der Bevölkerung verbreiten. Sie
+                    wollen Feinde bestrafen, nicht überzeugen. Je mehr Tote und Aufmerksamkeit, desto besser für sie.
+                </li>
+                <li><strong>Täter:</strong> Sind Überzeugungstäter, die kompromisslos handeln und ihren eigenen Tod mit
+                    einkalkulieren.</li>
+                <li><strong>Beispiele in Deutschland:</strong> NSU (Rechtsterrorismus) und RAF (Linksterrorismus).</li>
+            </ul>
+
+            <!-- Abschnitt: Beantwortete Aufgaben -->
+            <h3 style="margin-top: 30px;">3. Aufgabenbearbeitung (S. 168/169)</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+
+                <p><strong>Aufgabe 1: Typische Merkmale des Rechtsextremismus (anhand Anschlag in Halle):</strong><br>
+                    Der Täter handelte aus antisemitischen und rassistischen Motiven ("Kampf gegen Juden und Kanaken").
+                    Er wählte gezielt den jüdischen Feiertag Jom Kippur für seinen stark bewaffneten Angriff auf eine
+                    Synagoge und tötete wahllos Menschen. Er nutzte das Internet, um die Tat live zu übertragen und ein
+                    Manifest zu veröffentlichen, was typisch für die Vernetzung und das Geltungsbedürfnis heutiger
+                    Rechtsextremer ist.</p>
+
+                <p><strong>Aufgabe 2: Typische Merkmale von Linksextremisten (anhand G20 Hamburg):</strong><br>
+                    Sie organisieren sich in sogenannten "autonomen Gruppen" und kleinen "Bezugsgruppen", um bei
+                    Straßenkämpfen besser taktieren zu können. Sie verüben gezielte Gewalt gegen staatliche Symbole
+                    (Polizei) und Eigentum (brennende Barrikaden, verkohlte Autos) und sind oft vermummt.</p>
+
+                <p><strong>Aufgabe 3: Rechtspopulismus vs. Rechtsextremismus (Abgrenzung):</strong></p>
+                <table style="background-color: white; margin-bottom: 15px;">
+                    <tr>
+                        <th>Rechtspopulismus (z.B. AfD)</th>
+                        <th>Rechtsextremismus</th>
+                    </tr>
+                    <tr>
+                        <td>Kritisiert kulturelle Unterschiede, sieht Migration/Islam als Gefahr, nutzt Wahlen als
+                            Mittel.</td>
+                        <td>Glaubt an biologische ("rassische") Überlegenheit, spricht Ausländern das Existenzrecht ab,
+                            nutzt Gewalt und Anschläge als Mittel.</td>
+                    </tr>
+                </table>
+
+                <p><strong>Aufgabe 4: Gemeinsamkeiten und Unterschiede (Rechts vs. Links):</strong><br>
+                    <em>Gemeinsamkeit:</em> Beide lehnen die Demokratie und den demokratischen Rechtsstaat ab und nutzen
+                    Gewalt, um ihre Ziele zu erreichen.<br>
+                    <em>Unterschied (Zitat Olaf Sundermeyer):</em> Rechte Gewalt richtet sich nach "unten" (gegen
+                    schwächere Minderheiten und Migranten), während sich linke Gewalt nach "oben" richtet (gegen Staat,
+                    Polizei und Reiche).
+                </p>
+
+                <p><strong>Aufgabe 5: Worin besteht die besondere Gefahr des Terrorismus?</strong><br>
+                    Die besondere Gefahr liegt in der Bedingungslosigkeit der Täter. Da sie aus tiefster Überzeugung
+                    handeln und bereit sind, für ihre Ziele zu sterben, haben sie keine Hemmungen, größtmöglichen
+                    Schaden mit vielen zivilen Todesopfern anzurichten, um maximale Angst in der Gesellschaft zu
+                    verbreiten.</p>
+
+            </div>
+        </div>
+
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 5: DIE INTERNATIONALE PERSPEKTIVE                   -->
+        <!-- ========================================================= -->
+        <div class="block-title bg-block5">🟣 Block 5: Die internationale Perspektive</div>
+        <!-- Start Menschenrechte Block -->
+        <div class="card">
+            <h2>🌍 Thema: Menschenrechte International</h2>
+
+            <p>Die <strong>Allgemeine Erklärung der Menschenrechte (AEMR)</strong> ist eine Liste mit den wichtigsten
+                Rechten, auf die sich die Weltgemeinschaft geeinigt hat und die allen Menschen zustehen.</p>
+
+            <!-- Abschnitt: Die wichtigsten Artikel -->
+            <h3>1. Wichtige Artikel der AEMR (Kurzfassung)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Artikel</th>
+                        <th>Recht / Verbot</th>
+                        <th>Erklärung (Forderung)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Artikel 2</strong></td>
+                        <td>Diskriminierungsverbot</td>
+                        <td>Niemand darf aufgrund von Herkunft, Hautfarbe, Religion oder Geschlecht benachteiligt
+                            werden.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 3</strong></td>
+                        <td>Recht auf Leben, Freiheit und Sicherheit</td>
+                        <td>Keine Gewalt, keine Tötung anderer Menschen, niemand darf ohne triftigen rechtlichen Grund
+                            eingesperrt werden.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 5</strong></td>
+                        <td>Verbot der Folter</td>
+                        <td>Niemand darf körperlich oder seelisch gefoltert oder grausam behandelt werden.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 7</strong></td>
+                        <td>Gleichheit vor dem Gesetz</td>
+                        <td>Alle Menschen werden gleich behandelt und haben die gleichen Rechte und Pflichten vor
+                            Gericht. Niemand wird bevorzugt.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 11</strong></td>
+                        <td>Garantie der Unschuldsvermutung</td>
+                        <td>Jeder gilt als unschuldig, bis seine Schuld in einem fairen Verfahren bewiesen ist.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 12</strong></td>
+                        <td>Schutz der Privatsphäre</td>
+                        <td>Jeder hat ein Recht auf Privatsphäre; niemand hat das Recht, ohne Erlaubnis (z.B. der
+                            Polizei mit Durchsuchungsbeschluss) in eine Wohnung einzudringen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 14</strong></td>
+                        <td>Asylrecht</td>
+                        <td>Jeder, der politisch verfolgt wird, hat das Recht, in anderen Ländern Asyl (Schutz) zu
+                            suchen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 18</strong></td>
+                        <td>Gedanken-, Gewissens- und Religionsfreiheit</td>
+                        <td>Jeder darf frei denken und glauben, was er/sie will.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 19</strong></td>
+                        <td>Meinungs- und Informationsfreiheit</td>
+                        <td>Jeder darf seine Meinung frei äußern und sich aus allgemein zugänglichen Quellen
+                            informieren.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 21</strong></td>
+                        <td>Recht auf Mitwirkung (Demokratieprinzip)</td>
+                        <td>Jeder hat das Recht, zu wählen, abzustimmen und die politische Position des Landes, in dem
+                            er lebt, zu beeinflussen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 23</strong></td>
+                        <td>Recht auf angemessene Arbeit</td>
+                        <td>Schutz vor Ausbeutung und das Recht auf die Mitgliedschaft in einer Gewerkschaft, um für
+                            bessere Bedingungen zu kämpfen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 25</strong></td>
+                        <td>Recht auf angemessenen Lebensstandard</td>
+                        <td>Recht auf ausreichend Nahrung, Kleidung, Wohnung und medizinische Versorgung.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Artikel 26</strong></td>
+                        <td>Recht auf Bildung</td>
+                        <td>Jeder hat (unabhängig von Status und Geschlecht) das Recht auf Ausbildung, um den
+                            gewünschten Beruf zu erlernen.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Abschnitt: Schutz der Menschenrechte -->
+            <h3>2. Schutz und Umsetzung</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h4 style="margin-top:0; color: var(--primary-color);">Pflichten des Staates</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Schutz und Achtung der Menschenrechte (z.B. keine Folter anwenden).</li>
+                        <li>Schutz vor Angriffen durch andere Menschen (z.B. Schutz vor Gewalt bei Demonstrationen).
+                        </li>
+                        <li>Gewährleistung durch staatliche Leistungen (z.B. das Bereitstellen von kostenloser Bildung).
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <h4 style="margin-top:0; color: var(--primary-color);">Menschenrechts-NGOs (z.B. Amnesty
+                        International)</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Informieren die Weltöffentlichkeit über Menschenrechtsverletzungen.</li>
+                        <li>Leisten direkte Hilfe für Opfer.</li>
+                        <li>Leisten präventive Arbeit (Forderung nach neuen Gesetzen, Aufklärung der Bevölkerung).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Abschnitt: Fallbeispiele -->
+            <h3>3. Fallbeispiele aus der Praxis</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+                <p><strong>Fall 1: Gelten Menschenrechte auch für Staatsoberhäupter?</strong><br>
+                    <em>Situation:</em> Ein diktatorischer Regierungschef, der Journalisten foltern ließ, wird gestürzt
+                    und inhaftiert. Darf er zur Strafe nun selbst gefoltert werden?<br>
+                    <em>Lösung:</em> Nein! Nach Artikel 7 (Gleichheit vor dem Gesetz) wird jeder gleich bestraft. Auch
+                    Politiker und ehemals wichtige Menschen dürfen nicht gefoltert werden, da das Folterverbot (Artikel
+                    5) absolut ist.
+                </p>
+
+                <p style="margin-top: 15px;"><strong>Fall 2: Von wem kann ich meine Rechte einfordern?</strong><br>
+                    <em>Situation:</em> Eine Fabrikarbeiterin tritt in eine Gewerkschaft ein, weil es keinen
+                    Gesundheitsschutz bei der Arbeit gibt. Daraufhin kündigt ihr der Chef. Darf er das?<br>
+                    <em>Lösung:</em> Nein! Nach Artikel 23 hat sie das ausdrückliche Recht auf angemessene Arbeit und
+                    die Mitgliedschaft in einer Gewerkschaft. Die Kündigung aufgrund des Arbeitsschutzes und des
+                    Gewerkschaftsbeitritts ist nicht gültig.
+                </p>
+            </div>
+
+            <!-- Abschnitt: Globale Menschenrechtsverletzungen -->
+            <h3 style="margin-top: 30px;">4. Globale Problemfelder (Projektarbeit)</h3>
+            <p>Trotz der AEMR werden Menschenrechte weltweit systematisch verletzt. Vier zentrale Problemfelder sind:
+            </p>
+            <ul>
+                <li><strong>Kinderarbeit:</strong> Zum Beispiel beim Abbau von Rohstoffen für Mobiltelefone/Elektroautos
+                    im Kongo, auf Palmöl-Plantagen oder in der Textilindustrie in Bangladesch.</li>
+                <li><strong>Frauenrechte:</strong> Unterdrückung, Kopftuchzwang (z.B. durch die Sittenpolizei im Iran)
+                    oder geschlechtsspezifische Gewalt wie die Genitalverstümmelung.</li>
+                <li><strong>Zwangsarbeit & moderne Sklaverei:</strong> Menschen werden global ausgebeutet, teils sogar
+                    in den Lieferketten großer westlicher Konzerne.</li>
+                <li><strong>Staatliche Überwachung:</strong> Totale präventive Kontrolle durch Punktesysteme (Social
+                    Scoring in China) oder absolute staatliche Unterdrückung und Misshandlung (wie in Nordkorea).</li>
+            </ul>
+        </div>
+        <!-- Ende Menschenrechte Block -->
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 6: GESCHICHTE DER DEMOKRATIE IN DEUTSCHLAND         -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #16a085, #1abc9c);">⏳ Block 6: Entwicklung
+            der Demokratie (1945 - 1990)</div>
+
+        <!-- 1945 -->
+        <section class="card">
+            <h2>🏳️ 1945: Kriegsende und Neuordnung</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 16, 17].</p>
+
+            <h3>1. Das Ende des Zweiten Weltkriegs</h3>
+            <ul>
+                <li>Am 7. und 8. Mai 1945 kapitulierte Deutschland und der Krieg endete[cite: 17]. Generaloberst Wilhelm
+                    Keitel unterzeichnete die bedingungslose Kapitulation[cite: 17].</li>
+                <li>In der <strong>Viermächterklärung</strong> wurde festgelegt, dass Deutschland in vier
+                    Besatzungszonen und Berlin in vier Sektoren aufgeteilt wird[cite: 17].</li>
+            </ul>
+
+            <h3>2. Potsdamer Konferenz (19.07. - 02.08.1945)</h3>
+            <p>Auf der Konferenz im Schloss Cäcilienhof trafen sich Winston Churchill (später Clement Attlee), Harry S.
+                Truman und Josef W. Stalin[cite: 16, 17]. Sie beschlossen die sogenannten <strong>4-Ds</strong>[cite:
+                16, 17]:</p>
+            <ul>
+                <li><span class="badge">Demilitarisiert</span> Es durfte vorerst kein Militär mehr geben[cite: 16, 17].
+                </li>
+                <li><span class="badge">Denazifiziert</span> Täter sollten bestraft werden und ein Umdenken
+                    stattfinden[cite: 16, 17].</li>
+                <li><span class="badge">Demokratisiert</span> Eine demokratische Gesellschaft sollte entstehen[cite: 16,
+                    17].</li>
+                <li><span class="badge">Dezentralisiert</span>[cite: 16, 17].</li>
+            </ul>
+
+            <h3>3. Nürnberger Prozesse (ab 20. Nov 1945)</h3>
+            <ul>
+                <li>Es begann der Prozess gegen 22 Hauptkriegsverbrecher der NS-Zeit (u.a. Hermann Göring)[cite: 16,
+                    17]. </li>
+                <li>Das Besondere: Erstmals wurden Angehörige einer Staatsführung für Verbrechen gegen das Völkerrecht
+                    vor Gericht gestellt[cite: 17].</li>
+            </ul>
+        </section>
+
+        <!-- 1949 -->
+        <section class="card">
+            <h2>🇩🇪 1949: Die doppelte Staatsgründung</h2>
+
+            <h3>1. Bundesrepublik Deutschland (Westen)</h3>
+            <ul>
+                <li>Am 23. Mai 1949 wurde das <mark>Grundgesetz</mark> für die drei westlichen Besatzungszonen
+                    verabschiedet[cite: 16, 17]. Die neue Bundeshauptstadt wurde Bonn[cite: 17].</li>
+                <li>Im August 1949 fand die erste Bundestagswahl statt, welche die CDU/CSU knapp vor der SPD
+                    gewann[cite: 16, 17].</li>
+                <li><mark>Konrad Adenauer</mark> wurde der erste Bundeskanzler der BRD (1949-1963)[cite: 16, 17].</li>
+            </ul>
+
+            <h3>2. Deutsche Demokratische Republik (Osten)</h3>
+            <ul>
+                <li>Am 7. Oktober 1949 wurde im Osten auf dem Gebiet der sowjetischen Zone die DDR gegründet[cite: 16,
+                    17].</li>
+                <li>Otto Grotewohl wurde Ministerpräsident und Walter Ulbricht war der erste Staatsratsvorsitzende[cite:
+                    17].</li>
+            </ul>
+        </section>
+
+        <!-- 1961 - 1968 -->
+        <section class="card">
+            <h2>🧱 1961 - 1968: Mauerbau und Reformen</h2>
+
+            <h3>1. Bau der Berliner Mauer (1961)</h3>
+            <ul>
+                <li>Am 12. bzw. 13. August 1961 begann der Bau der Berliner Mauer, um das "Schlupfloch Berlin" zu
+                    schließen[cite: 16, 17].</li>
+                <li>Der Grund: Zuvor flüchteten tausende Menschen aufgrund schlechter Lebensbedingungen und fehlender
+                    Freiheit aus der DDR in den Westen[cite: 16, 17].</li>
+            </ul>
+
+            <h3>2. Notstandsgesetze und Studentenbewegung (1968)</h3>
+            <ul>
+                <li>1968 wurden die <mark>Notstandsgesetze</mark> verabschiedet[cite: 16, 17]. Sie erlaubten den Einsatz
+                    der Bundeswehr bei inneren Unruhen und schränkten Grundrechte (wie das Briefgeheimnis) im Notfall
+                    ein[cite: 16, 17].</li>
+                <li>Dagegen gab es heftige Proteste der Studentenbewegung (APO - Außerparlamentarische Opposition) und
+                    der Gewerkschaften, da man Angst vor einem neuen Ermächtigungsgesetz hatte[cite: 17].</li>
+            </ul>
+
+            <h3>3. Die Ära Brandt (ab 1969)</h3>
+            <ul>
+                <li>Unter Kanzler <mark>Willy Brandt</mark> (SPD) wurden Reformen unter dem Motto "Wir wollen mehr
+                    Demokratie wagen" umgesetzt[cite: 17].</li>
+                <li>Wichtige Neuerungen waren die Einführung des BaföG und die Herabsetzung des Volljährigkeits- und
+                    Wahlalters auf 18 Jahre[cite: 16, 17].</li>
+            </ul>
+        </section>
+
+        <!-- 1970er -->
+        <section class="card">
+            <h2>⚠️ 1970er: Terrorismus und "Deutscher Herbst"</h2>
+
+            <h3>1. Die Rote Armee Fraktion (RAF)</h3>
+            <ul>
+                <li>Die RAF war eine linksextremistische Terrorgruppe, die den kapitalistischen Staat und die Demokratie
+                    mit Gewalt stürzen wollte[cite: 16, 17].</li>
+                <li>Zu den Anführern gehörten Andreas Baader, Gudrun Ensslin und Ulrike Meinhof[cite: 16, 17].</li>
+                <li>Sie verübten zahlreiche Entführungen, Ermordungen und Überfälle[cite: 16, 17].</li>
+            </ul>
+
+            <h3>2. Der "Deutsche Herbst" (1977)</h3>
+            <ul>
+                <li>Im Jahr 1977 erreichte der Terror unter Bundeskanzler Helmut Schmidt seinen traurigen
+                    Höhepunkt[cite: 16, 17].</li>
+                <li>Der Arbeitgeberpräsident Hanns Martin Schleyer wurde entführt und später ermordet[cite: 17].</li>
+                <li>Zur Erpressung der Regierung wurde das Flugzeug "Landshut" nach Mogadischu entführt, konnte aber von
+                    der Spezialeinheit GSG 9 befreit werden[cite: 17].</li>
+                <li>Daraufhin begingen die inhaftierten RAF-Führer in ihren Zellen Selbstmord[cite: 17].</li>
+            </ul>
+        </section>
+
+        <!-- 1989 - 1990 -->
+        <section class="card">
+            <h2>🕊️ 1989 - 1990: Mauerfall und Wiedervereinigung</h2>
+
+            <h3>1. Friedliche Revolution in der DDR (1989)</h3>
+            <ul>
+                <li>Der sowjetische Staatschef Michail Gorbatschow weckte mit seiner Reformpolitik Hoffnung auf
+                    Wandel[cite: 17].</li>
+                <li>In Leipzig und anderen Städten begannen die <mark>Montagsdemonstrationen</mark>[cite: 16, 17]. Die
+                    Menschen riefen "Wir sind das Volk" und forderten Demokratie, Reisefreiheit und das Ende der
+                    SED-Diktatur[cite: 16, 17].</li>
+                <li>Am <strong>9. November 1989</strong> verkündete Günter Schabowski irrtümlich die sofortige
+                    Reisefreiheit: Es kam zum Mauerfall und die Grenzen wurden geöffnet[cite: 16, 17].</li>
+            </ul>
+
+            <h3>2. Die Deutsche Wiedervereinigung (1990)</h3>
+            <ul>
+                <li>Am 1. Juli 1990 trat die Währungs-, Wirtschafts- und Sozialunion in Kraft, wodurch die D-Mark und
+                    die Soziale Marktwirtschaft im Osten eingeführt wurden[cite: 16, 17].</li>
+                <li>Die vier ehemaligen Siegermächte stimmten der Einheit im <mark>2-plus-4-Vertrag</mark> (quasi ein
+                    Friedensvertrag) zu und gaben Deutschland die volle Souveränität[cite: 16, 17].</li>
+                <li>Am <strong>3. Oktober 1990</strong> wurden die beiden Staaten unter Bundeskanzler Helmut Kohl (CDU)
+                    offiziell wiedervereinigt[cite: 16, 17]. Heute ist dies der "Tag der Deutschen Einheit"[cite: 16,
+                    17].</li>
+            </ul>
+
+            <!-- Übersichtstabelle basierend auf Deckblatt -->
+            <h3 style="margin-top: 30px;">📊 Tabellarische Übersicht: 1945 - 1990</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zeitpunkt</th>
+                        <th>Wichtige Ereignisse</th>
+                        <th>Berühmte Personen</th>
+                        <th>Fachbegriffe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1945</strong> (Juli-Nov)</td>
+                        <td>Potsdamer Konferenz / Nürnberger Prozess[cite: 16]</td>
+                        <td>W. Churchill, J. Stalin, H. Truman[cite: 16]</td>
+                        <td>4-Ds, Viermächterklärung[cite: 16]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1949</strong> (Mai-Okt)</td>
+                        <td>Grundgesetz (West) / Gründung DDR (Ost)[cite: 16]</td>
+                        <td>Konrad Adenauer[cite: 16]</td>
+                        <td>Bundestagswahl[cite: 16]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1961</strong> (August)</td>
+                        <td>Bau der Berliner Mauer[cite: 16]</td>
+                        <td>-</td>
+                        <td>Schlupfloch Berlin[cite: 16]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1968 / 1969</strong></td>
+                        <td>Notstandsgesetze / Ära Brandt[cite: 16, 17]</td>
+                        <td>Willy Brandt[cite: 16]</td>
+                        <td>BaföG, Notstand[cite: 16]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1970er</strong> (v.a. 1977)</td>
+                        <td>Terrorismus / Deutscher Herbst[cite: 16]</td>
+                        <td>Baader, Ensslin, Meinhof, H. Schmidt[cite: 16]</td>
+                        <td>Rote Armee Fraktion (RAF)[cite: 16]</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1989 / 1990</strong></td>
+                        <td>Mauerfall / Wiedervereinigung[cite: 16]</td>
+                        <td>Helmut Kohl[cite: 16]</td>
+                        <td>2-plus-4-Vertrag, D-Mark[cite: 16]</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 7: MEDIEN UND GESELLSCHAFTLICHER WANDEL             -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #34495e, #7f8c8d);">📱 Block 7: Medien und
+            gesellschaftlicher Wandel</div>
+
+        <!-- 1. MEDIENKONSUM -->
+        <section class="card">
+            <h2>💻 Thema: Medienkonsum und Nutzung</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 18].</p>
+
+            <h3>1. Beliebte Internetaktivitäten</h3>
+            <p>Die häufigsten Internetaktivitäten der Deutschen (Stand 1. Quartal 2018) umfassen[cite: 18]:</p>
+            <ul>
+                <li><strong>91%</strong> Infosuche zu Waren und Dienstleistungen[cite: 18].</li>
+                <li><strong>89%</strong> E-Mail Kommunikation[cite: 18].</li>
+                <li><strong>66%</strong> Infosuche zu Gesundheitsthemen[cite: 18].</li>
+                <li><strong>64%</strong> Videos schauen (z. B. YouTube)[cite: 18].</li>
+                <li><strong>59%</strong> Online-Banking[cite: 18].</li>
+            </ul>
+
+            <h3>2. Kampf gegen Fake-Bewertungen</h3>
+            <p>Ein großes Problem im Internet sind manipulierte Onlinebewertungen[cite: 18]. Verschiedene Plattformen
+                gehen aktiv dagegen vor:</p>
+            <ul>
+                <li><mark>Amazon</mark> verklagt Anbieter von gefälschten Bewertungen und hat ein Grundsatzurteil
+                    erwirkt: Rezensionen, für die der Verfasser bezahlt wurde, müssen als "bezahlte Anzeigen"
+                    gekennzeichnet werden[cite: 18].</li>
+                <li><mark>Jameda</mark> (Ärztebewertungsplattform) geht gegen Ärzte vor, die positive Bewertungen in
+                    Auftrag geben, und entfernt diese Manipulationsversuche[cite: 18].</li>
+                <li><mark>Holidaycheck</mark> mahnt Hotels ab, welche gekaufte Bewertungen nutzen[cite: 18].</li>
+            </ul>
+
+            <h3>3. Chancen des Internets (Zusammenfassung)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bereich</th>
+                        <th>Beispiele & Vorteile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge blue">Kommunikation</span></td>
+                        <td>E-Mail, Messenger[cite: 18]. Weltweit, einfach und günstig[cite: 18].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge green">Information</span></td>
+                        <td>Lexika (Wiki), Nachrichten, Videos[cite: 18]. Schneller Zugang[cite: 18].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge orange">Weiterbildung</span></td>
+                        <td>E-Learning, Apps, E-Books[cite: 18].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge red">Berufsleben</span></td>
+                        <td>Homeoffice, Onlinehandel, Firmenauftritte (Websites), Maschinensteuerung[cite: 18].</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- ========================================================= -->
+        <!-- BLOCK 8: EINWANDERUNG UND INTEGRATION                     -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #3f51b5, #5c6bc0);">🌍 Block 8: Einwanderung
+            und Integration</div>
+        <!-- 2. MIGRATION & STRUKTURWANDEL -->
+        <section class="card">
+            <h2>📈 Thema: Strukturwandel und Binnenmigration</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 19].</p>
+
+            <h3>1. Die Binnenwanderung in Deutschland (2018)</h3>
+            <p>Rund <strong>1,1 Millionen Menschen</strong> zogen 2018 in ein anderes Bundesland[cite: 19]. Oft finden
+                die meisten Abwanderungen von einem benachbarten Bundesland zum anderen oder aus Stadtstaaten (Berlin,
+                Hamburg, Bremen) statt[cite: 19].</p>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #d4edda; padding: 15px; border-left: 4px solid #28a745; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #155724;">📈 Gewinner (Zuzüge)</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Brandenburg (+15.412)[cite: 19]</li>
+                        <li>Bayern (+8.583)[cite: 19]</li>
+                        <li>Schleswig-Holstein (+8.245)[cite: 19]</li>
+                        <li>Sachsen (+4.467)[cite: 19]</li>
+                    </ul>
+                </div>
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #721c24;">📉 Verlierer (Fortzüge)</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Nordrhein-Westfalen (-10.377)[cite: 19]</li>
+                        <li>Berlin (-8.436)[cite: 19]</li>
+                        <li>Baden-Württemberg (-5.838)[cite: 19]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>2. Push- und Pull-Faktoren</h3>
+            <p>Warum ziehen Menschen weg (<mark>Push</mark>) oder werden von einer Region angezogen (<mark>Pull</mark>)?
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Regionstyp</th>
+                        <th style="background-color: #f8d7da;">Push-Faktoren (Wegdrücken)</th>
+                        <th style="background-color: #d4edda;">Pull-Faktoren (Anziehen)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Schrumpfende Region</strong></td>
+                        <td>Probleme mit Infrastruktur (ÖPNV, Einkaufen, Schulen)[cite: 19]. Wenig Arbeitsplätze,
+                            begrenztes Freizeitangebot, lange Wege[cite: 19].</td>
+                        <td>Günstige Mieten[cite: 19].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wachstumsregion</strong></td>
+                        <td>Hohe Mieten, Wohnungsmangel, Fachkräftemangel[cite: 19].</td>
+                        <td>Attraktiv für Unternehmen/Personal[cite: 19]. Viele Arbeitsplätze und gute Bezahlung[cite:
+                            19]. Guter ÖPNV und großes Freizeitangebot vor Ort[cite: 19].</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. Lösungsansätze gegen Abwanderung</h3>
+            <div
+                style="background-color: #eef2f5; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+                <p>Möglichkeiten, um der Entwicklung in schrumpfenden Regionen entgegenzuwirken[cite: 19]:</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Ausbau von <strong>Homeoffice</strong> für flexibleres Arbeiten[cite: 19].</li>
+                    <li>Subventionen und Förderungen durch den Staat[cite: 19].</li>
+                    <li>Steuerliche Vorteile und finanzielle Zuschüsse für das Leben in ländlicheren Gebieten[cite: 19].
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 1. GRUNDLAGEN MIGRATION -->
+        <section class="card">
+            <h2>🚶 Thema: Grundlagen der Migration</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 20].</p>
+
+            <h3>1. Definitionen</h3>
+            <ul>
+                <li><strong>Migration:</strong> Eine Wanderung, die eine dauerhafte räumliche Veränderung des
+                    Lebensmittelpunkts bedeutet[cite: 20].</li>
+                <li><strong>Migrationshintergrund:</strong> Menschen, die nach Deutschland zugewandert sind, oder in
+                    Deutschland geborene Menschen mit mindestens einem Elternteil, der zugewandert oder Ausländer
+                    ist[cite: 20].</li>
+            </ul>
+
+            <h3>2. Gründe für Migration (Push & Pull)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #f8d7da;">Push-Faktoren (Wegdrücken aus der Heimat)</th>
+                        <th style="background-color: #d4edda;">Pull-Faktoren (Anziehen in ein neues Land)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Krieg, politische Krisen und Verfolgung (aufgrund von Religion, Herkunft, Sexualität
+                                    oder politischer Einstellung)[cite: 20].</li>
+                                <li>Wirtschaftskrisen und keine Arbeit[cite: 20].</li>
+                                <li>Niedriger Lebensstandard (schlechte Bildung und Gesundheit)[cite: 20].</li>
+                                <li>Umweltkatastrophen und Klimawandel[cite: 20].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Arbeit, Ausbildung und Geld[cite: 20].</li>
+                                <li>Gutes Gesundheits- und Sozialsystem[cite: 20].</li>
+                                <li>"Sicherheiten" wie Freiheit und Demokratie[cite: 20].</li>
+                                <li>Kultur, Klima, Familie oder Liebe[cite: 20].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. EINWANDERUNGSLAND DEUTSCHLAND -->
+        <section class="card">
+            <h2>🇩🇪 Thema: Einwanderungsland Deutschland</h2>
+
+            <h3>1. Zeitstrahl der Einwanderung in Deutschland</h3>
+            <ul>
+                <li><strong>1871:</strong> Aus Polen immigrieren Menschen wegen Arbeitsplätzen[cite: 21].</li>
+                <li><strong>1933-1945:</strong> Auswanderung und Flucht der jüdischen Deutschen[cite: 21].</li>
+                <li><strong>1945:</strong> Mehr als 12 Millionen Flüchtlinge nach dem Krieg[cite: 21].</li>
+                <li><strong>1949:</strong> Flüchtlinge aus der neu gegründeten DDR[cite: 21].</li>
+                <li><strong>1950:</strong> Wirtschaftlicher Aufschwung[cite: 21].</li>
+                <li><strong>1955-1973:</strong> <mark>Gastarbeiter</mark> kommen nach Deutschland (aus der Türkei,
+                    Griechenland, Italien)[cite: 21].</li>
+                <li><strong>1980:</strong> Spätaussiedler ("Russlanddeutsche", Osteuropa) kommen an[cite: 21].</li>
+                <li><strong>1990:</strong> Flüchtlinge aufgrund der Balkankriege[cite: 21].</li>
+                <li><strong>2015:</strong> Flüchtlingswelle, stark geprägt durch Menschen aus Syrien[cite: 21].</li>
+                <li><strong>2022:</strong> Flüchtlinge aufgrund des Krieges in der Ukraine[cite: 21].</li>
+            </ul>
+
+            <h3>2. Aktuelle Daten & Fakten (Stand 2022)</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+                    <h4 style="margin-top:0;">Bevölkerungsstruktur</h4>
+                    <ul>
+                        <li>Im Jahr 2022 lebten in Deutschland rund <strong>83,1 Millionen</strong> Menschen[cite: 23].
+                        </li>
+                        <li>Davon hatten <strong>23,8 Millionen</strong> einen Migrationshintergrund[cite: 23].</li>
+                        <li>Von diesen 23,8 Millionen waren 12,2 Millionen Deutsche und 11,6 Millionen Ausländer[cite:
+                            23].</li>
+                    </ul>
+                </div>
+                <div
+                    style="flex: 1; min-width: 250px; background-color: #fff9e6; padding: 15px; border-left: 4px solid var(--warning-color); border-radius: 4px;">
+                    <h4 style="margin-top:0;">Asylanträge in der EU</h4>
+                    <ul>
+                        <li>2022 gab es in der EU 881.000 Erstanträge auf Asyl[cite: 23].</li>
+                        <li>Die häufigsten Herkunftsländer waren Syrien (15,0%) und Afghanistan (12,9%)[cite: 23].</li>
+                        <li><strong>Deutschland</strong> war mit 24,7% das Hauptantragsland innerhalb der EU (gefolgt
+                            von Frankreich mit 15,6%)[cite: 23].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. INTEGRATION VS ASSIMILATION -->
+        <section class="card">
+            <h2>🤝 Thema: Integration vs. Assimilation</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Integration</th>
+                        <th style="width: 50%;">Assimilation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Unterschiede werden akzeptiert[cite: 22].</li>
+                                <li>Beide Seiten (Minderheiten und Mehrheitsgesellschaft) müssen sich aufeinander
+                                    zubewegen[cite: 22].</li>
+                                <li><strong>Gemeinsame Basis:</strong> Sprache, Demokratie, Grundrechte und das
+                                    Einhalten von Gesetzen[cite: 22].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Minderheiten passen sich <em>komplett</em> an die Mehrheitsgesellschaft an[cite:
+                                    22].</li>
+                                <li>Die Mehrheitsgesellschaft bewegt sich nicht auf die Minderheit zu[cite: 22].</li>
+                                <li><strong>Folgen:</strong> Verlust oder Aufgabe der eigenen Herkunft und
+                                    Identität[cite: 22].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 4. EINWANDERUNGSGESETZ -->
+        <section class="card">
+            <h2>⚖️ Thema: Brauchen wir ein Einwanderungsgesetz?</h2>
+
+            <h3>1. Punktesysteme im Vergleich</h3>
+            <p>Zur Steuerung der Einwanderung nutzen manche Länder Punktesysteme. Ein Modellprojekt in Baden-Württemberg
+                (BW) forderte beispielsweise 100 Punkte für eine Zulassung[cite: 24].</p>
+            <ul>
+                <li><strong>Hindernisse im BW-Modell:</strong> Der Fokus lag sehr stark auf der Sprache
+                    (Mindestanforderung B2 bringt bereits 100 Punkte) und auf einem in Deutschland anerkannten
+                    Berufsabschluss[cite: 24].</li>
+                <li><strong>Vergleich zu Kanada:</strong> Das kanadische System ist flexibler aufgebaut. Es
+                    berücksichtigt auch Faktoren wie Alter, Berufserfahrung oder die Sprachkenntnisse des Partners[cite:
+                    24].</li>
+            </ul>
+
+            <h3>2. Pro und Kontra eines Zuwanderungsgesetzes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #d4edda;">Pro Einwanderungsgesetz (Volker Beck, Grüne)</th>
+                        <th style="background-color: #f8d7da;">Kontra Einwanderungsgesetz (Ole Schröder, CDU)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Deutschland ist auf Fachkräfte angewiesen, da der demografische Wandel in Europa
+                                    spürbar wird[cite: 24].</li>
+                                <li>Bestehende Regelungen sind zu unübersichtlich und wirken abschreckend; sie müssen
+                                    vereinfacht und liberalisiert werden[cite: 24].</li>
+                                <li>Einwanderungsregelungen müssen den Schutz von Ehe und Familie stärker
+                                    berücksichtigen[cite: 24].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Es wurden bereits moderne, bedarfsgerechte Regelungen eingeführt, die von der OECD
+                                    als vorbildlich gelobt werden (z.B. Blaue Karte der EU)[cite: 24].</li>
+                                <li>Ein konkreter Arbeitsplatz muss zwingend vorhanden sein, um Einwanderung in die
+                                    Sozialsysteme zu verhindern[cite: 24].</li>
+                                <li>Punktesysteme sind oft zu planwirtschaftlich und bürokratisch[cite: 24].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- ========================================================= -->
+        <!-- BLOCK 9: DER SOZIALSTAAT IN DEUTSCHLAND                   -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #f39c12, #d35400);">🛡️ Block 9: Der
+            Sozialstaat in Deutschland</div>
+
+        <!-- 1. ENTWICKLUNG & ZIELE DES SOZIALSTAATS -->
+        <section class="card">
+            <h2>📜 Thema: Entwicklung und Ziele des Sozialstaats</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 25].</p>
+
+            <h3>1. Wichtige historische Meilensteine</h3>
+            <ul>
+                <li><strong>1839:</strong> Erste Einschränkungen der Kinderarbeit in Preußen[cite: 25].</li>
+                <li><strong>1883 - 1889:</strong> Einführung der Sozialversicherung (Kranken-, Unfall- und
+                    Rentenversicherung für Arbeiter)[cite: 25].</li>
+                <li><strong>1927:</strong> Einführung der Arbeitslosenversicherung und erste Regelungen zum
+                    Mutterschutz[cite: 25].</li>
+                <li><strong>1954:</strong> Einführung des Kindergelds[cite: 25].</li>
+                <li><strong>1971:</strong> Ausbildungsförderung (BAföG) wird eingeführt[cite: 25].</li>
+                <li><strong>1995:</strong> Einführung der Pflegeversicherung[cite: 25].</li>
+                <li><strong>2007:</strong> Elterngeld und Elternzeit ersetzen das bisherige Erziehungsgeld und den
+                    Erziehungsurlaub[cite: 25].</li>
+            </ul>
+
+            <h3>2. Ziele des Sozialstaats</h3>
+            <p>Der Sozialstaat verfolgt verschiedene Hauptziele[cite: 25]:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ziel</th>
+                        <th>Beispiele / Maßnahmen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge blue">Soziale Sicherheit</span></td>
+                        <td>Schutz vor gesundheitlichen und wirtschaftlichen Risiken (gesetzliche
+                            Sozialversicherung)[cite: 25].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge green">Soziale Gerechtigkeit</span></td>
+                        <td>Familienpolitik (Elterngeld), Steuerpolitik (gestaffelte Steuersätze), Bildungspolitik
+                            (BAföG) und Vermögenspolitik[cite: 25].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge orange">Soziale Teilhabe</span></td>
+                        <td>Regelung der Arbeitsbeziehungen (Streikrecht, Tarifautonomie) und betriebliche Mitbestimmung
+                            (Betriebsrat)[cite: 25].</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge red">Sozialer Arbeitsschutz</span></td>
+                        <td>Schutz am Arbeitsplatz (z.B. Kündigungsschutz)[cite: 25].</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. FUNKTIONSWEISE & FINANZIERUNG -->
+        <section class="card">
+            <h2>💶 Thema: Wie funktioniert der Sozialstaat?</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 26].</p>
+
+            <h3>1. Ausgaben und Bausteine (Stand 2022)</h3>
+            <p>Die Sozialschutzleistungen in Deutschland beliefen sich 2022 auf insgesamt <strong>1131,9 Milliarden
+                    Euro</strong>[cite: 26]. Die fünf größten Ausgabeposten sind[cite: 26]:</p>
+            <ul>
+                <li><strong>Alter:</strong> 411,5 Mrd. €[cite: 26].</li>
+                <li><strong>Krankheit:</strong> 377,6 Mrd. €[cite: 26].</li>
+                <li><strong>Kinder:</strong> 128,1 Mrd. €[cite: 26].</li>
+                <li><strong>Invalidität:</strong> 81,2 Mrd. €[cite: 26].</li>
+                <li><strong>Hinterbliebene:</strong> 63,5 Mrd. €[cite: 26].</li>
+            </ul>
+
+            <h3>2. Die drei Prinzipien des Sozialstaats</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prinzip</th>
+                        <th>Bedeutung / Leistungen</th>
+                        <th>Beispiele</th>
+                        <th>Finanzierung</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Versicherungsprinzip</strong></td>
+                        <td>Wer bezahlt, bekommt etwas[cite: 26]. Es ist eine Pflichtversicherung für alle
+                            Arbeitnehmer[cite: 26].</td>
+                        <td>Kranken-, Renten-, Pflege- und Arbeitslosenversicherung[cite: 26].</td>
+                        <td>Beiträge (ca. 40% vom Bruttolohn) von Arbeitgeber und Arbeitnehmer[cite: 26].
+                            Solidaritätsprinzip: Beiträge nach Einkommen, nicht nach Alter oder Gesundheit[cite: 26].
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Versorgungsprinzip</strong></td>
+                        <td>Besondere Leistungen für die Gesellschaft[cite: 26].</td>
+                        <td>Kindergeld, Elterngeld[cite: 26].</td>
+                        <td>Steuern[cite: 26].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fürsorgeprinzip</strong></td>
+                        <td>Zuschuss und Hilfe in finanzieller Notlage[cite: 26].</td>
+                        <td>Sozialhilfe[cite: 26].</td>
+                        <td>Steuern[cite: 26].</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3. Der Generationenvertrag</h3>
+            <div
+                style="background-color: #fff9e6; padding: 15px; border-left: 4px solid var(--warning-color); border-radius: 4px; margin-top: 15px;">
+                <p>Der <mark>Generationenvertrag</mark> besagt, dass die aktuell arbeitende Generation durch ihre
+                    Beiträge die Rentner finanziert[cite: 26]. Die nächste Generation finanziert dann wiederum die dann
+                    ältere Generation[cite: 26].</p>
+                <p><em>Problemstellung ("Die Rente ist sicher"):</em> Durch den demografischen Wandel gibt es immer
+                    weniger Beitragszahler (Arbeiter) und immer mehr Leistungsempfänger (Rentner), was das System stark
+                    belastet[cite: 26].</p>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 10: GESELLSCHAFTLICHER WANDEL UND LEBENSWELTEN      -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #8e44ad, #2980b9);">👨‍👩‍👧‍👦 Block 10:
+            Gesellschaftlicher Wandel und Lebenswelten</div>
+
+        <!-- 1. VERÄNDERTE LEBENSVERHÄLTNISSE -->
+        <section class="card">
+            <h2>📈 Thema: Veränderte Lebensverhältnisse (1960 vs. 2019)</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 27].</p>
+
+            <h3>1. Wandel in Zahlen</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bereich</th>
+                        <th>1960 (BRD)</th>
+                        <th>2019 (Gesamtdeutschland)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Heiratsalter</strong> (männlich / weiblich)</td>
+                        <td>26 / 24 Jahre[cite: 27].</td>
+                        <td>35 / 32 Jahre[cite: 27].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bevölkerungsentwicklung</strong></td>
+                        <td>Geburtenüberschuss (+ 326.000)[cite: 27].</td>
+                        <td>Sterbeüberschuss (- 161.000)[cite: 27].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Erwerbsquote Frauen</strong></td>
+                        <td>34%[cite: 27].</td>
+                        <td>75%[cite: 27].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ausländeranteil</strong></td>
+                        <td>1,2% (1961)[cite: 27].</td>
+                        <td>12,5%[cite: 27].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Schulbesuch</strong> (8. Klasse)</td>
+                        <td>70% Hauptschule, 15% Gymnasium[cite: 27].</td>
+                        <td>8% Hauptschule, 37% Gymnasium[cite: 27].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ausgaben für Wohnen & Energie</strong></td>
+                        <td>16% des privaten Konsums[cite: 27].</td>
+                        <td>34% des privaten Konsums[cite: 27].</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. Lebensformen in Deutschland (2019)</h3>
+            <p>Nicht mehr die klassische Familie ist die häufigste Haushaltsform, sondern Single-Haushalte[cite: 27]:
+            </p>
+            <ul>
+                <li><span class="badge">44%</span> Einzelpersonen-Haushalte (davon 23% Unverheiratete und 21%
+                    Getrenntlebende/Verwitwete/Geschiedene)[cite: 27].</li>
+                <li><span class="badge blue">23%</span> Ehepaare ohne Kinder im Haushalt[cite: 27].</li>
+                <li><span class="badge green">19%</span> Ehepaare mit Kindern im Haushalt[cite: 27].</li>
+                <li><span class="badge orange">6%</span> Alleinerziehende[cite: 27].</li>
+            </ul>
+            <p><strong>Wichtige Begriffe:</strong> Eingetragene Lebenspartnerschaft, Patchwork-Familie, "Ehe für
+                alle"[cite: 27].</p>
+        </section>
+
+        <!-- 2. ARMUT IN DEUTSCHLAND -->
+        <section class="card">
+            <h2>⚠️ Thema: Armut in Deutschland</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 28].</p>
+
+            <div style="background-color: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; border-radius: 4px;">
+                <p>Armut bedeutet in Deutschland meistens nicht das absolute Fehlen von lebensnotwendigen Dingen (wie
+                    Verhungern), sondern zeigt sich oft durch <strong>Benachteiligung in der Gesellschaft</strong>[cite:
+                    28]. Dies betrifft Bereiche wie[cite: 28]:</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Mangelnde soziale und kulturelle Teilhabe[cite: 28].</li>
+                    <li>Schlechtere Bildungschancen[cite: 28].</li>
+                    <li>Gesundheitliche Nachteile[cite: 28].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 11: FAMILIENPOLITIK UND GLEICHBERECHTIGUNG          -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #e84393, #d63031);">👨‍👩‍👧 Block 11: Familienpolitik und Gleichberechtigung</div>
+
+        <!-- 1. FAMILIENPOLITIK -->
+        <section class="card">
+            <h2>👨‍👩‍👧‍👦 Thema: Familienpolitik in Deutschland</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 30].</p>
+
+            <h3>1. Staatliche Unterstützung</h3>
+            <p>Der Staat versucht, Familien durch finanzielle und rechtliche Hilfen zu fördern, beispielsweise durch <mark>Kindergeld</mark>, <mark>Elternzeit</mark> und das <mark>Ehegatten-Splitting</mark>[cite: 30]. Eine Karikatur verdeutlicht jedoch, dass trotz dieser vielfältigen Angebote die Geburtenrate oft ein Problem bleibt (der Storch weigert sich, Kinder zu bringen)[cite: 30].</p>
+
+            <h3>2. Leitbilder der Familienpolitik</h3>
+            <p>Die deutsche Familienpolitik ist von zwei unterschiedlichen, teils gegensätzlichen Leitbildern geprägt[cite: 30]:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #d4edda; width: 50%;">Leitbild 1: Vereinbarkeit von Familie & Beruf</th>
+                        <th style="background-color: #fff3e0; width: 50%;">Leitbild 2: Frauen als Hausfrauen & Mütter stärken</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Stärkung der Berufstätigkeit von Müttern und Erleichterung beim Wiedereinstieg in den Beruf[cite: 30].</li>
+                                <li>Nutzung der Elternzeit[cite: 30].</li>
+                                <li>Ausbau von Betreuungsangeboten (z.B. Kitas und Ganztagsschulen)[cite: 30].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Steuerliche Vorteile gibt es vor allem in der Ehe[cite: 30].</li>
+                                <li>Durch Unterhalt und hohes Kindergeld bleiben Frauen oft lieber zu Hause[cite: 30].</li>
+                                <li>Betreuungsplätze richten sich oft nach dem Arbeitspensum ("kein Job, keine Betreuung") und kosten Geld[cite: 30].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. ROLLENBILDER UND BENACHTEILIGUNG -->
+        <section class="card">
+            <h2>🎭 Thema: Traditionelle Rollenbilder und Benachteiligung</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 31].</p>
+
+            <h3>1. Was sind "traditionelle Rollenbilder"?</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+                <div style="flex: 1; min-width: 250px; background-color: #fce4ec; padding: 15px; border-left: 4px solid #e91e63; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #c2185b;">👩 Klischees über Frauen</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Kochen, Haushalt machen und Kinder bekommen[cite: 31].</li>
+                        <li>"Dienstleisterin" für den Mann[cite: 31].</li>
+                        <li>Haben weniger Rechte und können angeblich nicht gut mit Autos umgehen[cite: 31].</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 250px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #2980b9;">👨 Klischees über Männer</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Familienoberhaupt und Versorger (Geld verdienen)[cite: 31].</li>
+                        <li>Machen keinen Haushalt und sind technikaffin[cite: 31].</li>
+                        <li>Gelten als rechtliche Vertreter und werden oft als "schlauer" dargestellt[cite: 31].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>2. Lebenswege und strukturelle Benachteiligung</h3>
+            <p>Verschiedene Ereignisse prägen den beruflichen und privaten Lebensweg von Frauen besonders stark:</p>
+            <ul>
+                <li><strong>Familienplanung:</strong> Kinder führen meist dazu, dass die Frau die Kinderbetreuung übernimmt[cite: 31].</li>
+                <li><strong>Heirat und Scheidung:</strong> Eine Scheidung führt bei Frauen häufig zu einer großen finanziellen Belastung[cite: 31].</li>
+                <li><strong>Klischees:</strong> Beeinflussen die Wahl von Berufen und Schulfächern[cite: 31].</li>
+            </ul>
+
+            <div style="background-color: #fff9e6; padding: 15px; border-left: 4px solid var(--warning-color); border-radius: 4px; margin-top: 20px;">
+                <h4 style="margin-top: 0;">📉 Lohnlücke und Diskriminierung (Stand 2020)</h4>
+                <ul style="margin-bottom: 0;">
+                    <li>Nur <strong>8% der Frauen</strong>, aber <strong>12% der Männer</strong> sind in leitenden Positionen beschäftigt[cite: 31].</li>
+                    <li>Männer in Führungspositionen verdienen im Durchschnitt 49,50 € brutto/Stunde, Frauen hingegen nur 44,30 € (ein <strong>Unterschied von 5,20 € bzw. 12%</strong>)[cite: 31].</li>
+                    <li>Frauen werden oft diskriminiert: Ungleicher Lohn bei gleichem Job oder Bildungsabschluss[cite: 31]. Bei Einstellungen werden Männer oft bevorzugt, und Frauen arbeiten wesentlich häufiger in Teilzeit[cite: 31].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 3. GLEICHBERECHTIGUNG UND FRAUENQUOTE -->
+        <section class="card">
+            <h2>⚖️ Thema: Gleichberechtigung und Frauenquote</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 31].</p>
+
+            <h3>1. Wünsche an die Familienpolitik</h3>
+            <p>Eltern mit Kindern unter 18 Jahren setzen bei der Familienpolitik folgende Schwerpunkte (Umfrage)[cite: 31]:</p>
+            <ul>
+                <li><span class="badge">69%</span> Familien mit niedrigem Einkommen finanziell besser fördern[cite: 31].</li>
+                <li><span class="badge">68%</span> Vereinbarkeit von Familie und Beruf erleichtern[cite: 31].</li>
+                <li><span class="badge">60%</span> Den Erzieherberuf attraktiver machen[cite: 31].</li>
+                <li><span class="badge">57%</span> Ganztagsbetreuung für Grundschüler ausbauen[cite: 31].</li>
+            </ul>
+
+            <h3>2. Diskussion: Frauenquote in Führungspositionen</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #d4edda; width: 50%;">Pro Frauenquote (+)</th>
+                        <th style="background-color: #f8d7da; width: 50%;">Kontra Frauenquote (-)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Nur durch Druck kommen Frauen in Führungspositionen[cite: 31].</li>
+                                <li>Chancengleichheit entsteht nicht von allein[cite: 31].</li>
+                                <li>Die Quote hilft Frauen, Einfluss zu gewinnen[cite: 31].</li>
+                                <li>Gemischte Führungsteams arbeiten besser[cite: 31].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Frauen wollen nicht als bloße "Quotenfrauen" wahrgenommen werden[cite: 31].</li>
+                                <li>Es sollte ausschließlich die Leistung zählen[cite: 31].</li>
+                                <li>Männer könnten dadurch Karrierechancen verlieren[cite: 31].</li>
+                                <li>Der bürokratische Aufwand für Unternehmen ist zu groß[cite: 31].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 12: DIE EUROPÄISCHE UNION (EU)                      -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #0984e3, #00a8ff);">🇪🇺 Block 12: Die Europäische Union (EU)</div>
+
+        <!-- 1. GESCHICHTE UND ENTWICKLUNG -->
+        <section class="card">
+            <h2>📜 Thema: Geschichte und Entwicklung der EU</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 33].</p>
+
+            <h3>1. Gründe für die Einigung</h3>
+            <ul>
+                <li><strong>Friedenssicherung:</strong> Nach zwei Weltkriegen sollte eine Friedensordnung in Europa aufgebaut werden[cite: 33]. Ein wichtiger Meilenstein war die Aussöhnung zwischen Deutschland (Konrad Adenauer) und Frankreich (Charles de Gaulle)[cite: 33].</li>
+                <li><strong>Wirtschaftlicher Aufschwung:</strong> Stabilität und Wohlstand durch gemeinsame Anstrengungen und einen freien Markt ohne Zölle[cite: 33].</li>
+                <li><strong>Gemeinsame Kontrolle:</strong> Insbesondere die Schwerindustrie (Kohle und Stahl) sollte gemeinsam kontrolliert werden[cite: 33].</li>
+            </ul>
+
+            <h3>2. Etappen der EU-Einigung</h3>
+            <p>Die europäische Integration vollzog sich in mehreren Schritten[cite: 33]:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jahr</th>
+                        <th>Abkürzung</th>
+                        <th>Bedeutung / Ereignis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1951</strong></td>
+                        <td><span class="badge blue">EGKS</span></td>
+                        <td><strong>Europäische Gemeinschaft für Kohle und Stahl (Montanunion):</strong> Gemeinsame Regelung der Schwerindustrie durch Belgien, Deutschland, Frankreich, Italien, Luxemburg und die Niederlande[cite: 33].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1957</strong></td>
+                        <td><span class="badge green">EWG</span></td>
+                        <td><strong>Europäische Wirtschaftsgemeinschaft:</strong> Römische Verträge; Schaffung eines gemeinsamen Marktes ohne Zölle[cite: 33].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1967</strong></td>
+                        <td><span class="badge orange">EG</span></td>
+                        <td><strong>Europäische Gemeinschaft</strong>[cite: 33].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1973</strong></td>
+                        <td><span class="badge">Erweiterung</span></td>
+                        <td>Beitritt von Dänemark, Irland und Großbritannien[cite: 33].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>1992</strong></td>
+                        <td><span class="badge red">EU</span></td>
+                        <td>Gründung der <strong>Europäischen Union</strong>[cite: 33].</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. MITGLIEDSCHAFT & KRITERIEN -->
+        <section class="card">
+            <h2>🤝 Thema: Mitgliedschaft und Grenzen der EU</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 34].</p>
+
+            <div style="background-color: #eef2f5; padding: 15px; border-left: 4px solid #34495e; border-radius: 4px; margin-bottom: 20px;">
+                <p style="margin-top: 0;"><strong>Wichtig:</strong> Europa (der Kontinent mit all seinen Ländern, wie z.B. auch der Schweiz oder Norwegen) ist <em>nicht</em> das Gleiche wie die Europäische Union (ein politischer und wirtschaftlicher Staatenverbund)[cite: 34].</p>
+            </div>
+
+            <h3>Die "Kopenhagener Kriterien" (1993)</h3>
+            <p>Damit ein europäisches Land der EU beitreten darf, muss es strenge Aufnahmestandards erfüllen, die in drei Kategorien unterteilt sind[cite: 34]:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 33%;">Politische Kriterien (PK)</th>
+                        <th style="width: 33%;">Wirtschaftliche Kriterien (WK)</th>
+                        <th style="width: 33%;">Acquis-Kriterien (AK)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Demokratische Verfassung und Gewaltenteilung[cite: 34].</li>
+                                <li>Unabhängige Gerichte und freie Wahlen[cite: 34].</li>
+                                <li>Schutz von Menschenrechten und Minderheiten[cite: 34].</li>
+                                <li>Funktionierender Rechtsstaat[cite: 34].</li>
+                                <li>Das Land darf nicht im Krieg sein[cite: 34].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Funktionierende Marktwirtschaft[cite: 34].</li>
+                                <li>Fähigkeit, dem Wettbewerb im EU-Markt standzuhalten[cite: 34].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Akzeptanz aller EU-Gesetze und EU-Standards ("Acquis communautaire")[cite: 34].</li>
+                                <li>Übernahme aller Rechte und Pflichten als EU-Mitglied[cite: 34].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 3. ALLTAG IN DER EU -->
+        <section class="card">
+            <h2>🛒 Thema: Leben und Arbeiten in Europa</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 35].</p>
+
+            <h3>1. Berührungspunkte im Alltag ("Ich und die EU")</h3>
+            <p>Die EU betrifft uns in vielen alltäglichen Bereichen[cite: 35]:</p>
+            <ul>
+                <li><strong>Reisen:</strong> Keine Grenzkontrollen, keine Roaminggebühren für Handys und Schutz durch die europäische Krankenkarte[cite: 35].</li>
+                <li><strong>Einkaufen:</strong> Der Euro als einheitliche Währung, starke Verbraucherschutzrechte, Gewährleistungsfristen und Schutz beim Online-Shopping[cite: 35].</li>
+                <li><strong>Gesundheit & Umwelt:</strong> Strenge Standards für Wasser- und Luftqualität, hohe Anforderungen an Lebensmittel (z.B. Fleisch) und Verbote bestimmter Pestizide in der Landwirtschaft[cite: 35].</li>
+                <li><strong>Arbeit:</strong> Arbeitnehmerfreizügigkeit (man darf im EU-Ausland arbeiten) und soziale Mindeststandards[cite: 35].</li>
+            </ul>
+
+            <h3>2. Meinungen zur EU</h3>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; background-color: #d4edda; padding: 15px; border-left: 4px solid #28a745; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #155724;">👍 Positive Sichtweisen</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>Grenzenloses und freies Reisen[cite: 35].</li>
+                        <li>Starke demokratische Rechte (Wählen, Demonstrieren)[cite: 35].</li>
+                        <li>Stabilität und Frieden (Ruhiges Leben)[cite: 35].</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 250px; background-color: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; border-radius: 4px;">
+                    <h4 style="margin-top:0; color: #721c24;">👎 EU-Skepsis</h4>
+                    <ul style="margin-bottom:0; padding-left: 20px;">
+                        <li>"Brüssel redet zu viel in unsere eigenen Angelegenheiten hinein"[cite: 35].</li>
+                        <li>Sorge, dass große Länder (wie Deutschland) zu viel Macht erhalten[cite: 35].</li>
+                        <li>Das Gefühl, dass die Staaten zu unterschiedlich sind und noch keine echte Union bilden[cite: 35].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROBLEME DER EU -->
+        <section class="card">
+            <h2>⚠️ Thema: Aktuelle Herausforderungen der EU</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 32].</p>
+
+            <p>Die EU steht aktuell vor mehreren hartnäckigen Problemen, die den Zusammenhalt auf die Probe stellen[cite: 32]:</p>
+            <ul>
+                <li><span class="badge blue">Migration & Flüchtlinge</span> Wie geht die EU gemeinsam mit der Verteilung und Aufnahme von Geflüchteten um?[cite: 32]</li>
+                <li><span class="badge green">Umweltschutz & Klima</span> Der Weg zu einer klimaneutralen EU (z.B. durch den "European Green Deal")[cite: 32].</li>
+                <li><span class="badge red">Nationalismus vs. Einheit</span> Wachsende EU-Skepsis und die Frage, ob nationale Interessen oder der europäische Zusammenhalt im Vordergrund stehen sollen[cite: 32].</li>
+            </ul>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 13: GLOBALISIERUNG                                  -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #27ae60, #2ecc71);">🌍 Block 13: Globalisierung - Ursachen, Dimensionen und Folgen</div>
+
+        <!-- 1. GRUNDLAGEN UND URSACHEN -->
+        <section class="card">
+            <h2>🌐 Thema: Was ist Globalisierung und woher kommt sie?</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall.</p> 
+
+            <h3>1. Definition: "Die Welt ist ein Dorf"</h3>
+            <div style="background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px; margin-bottom: 20px;">
+                <p style="margin-top: 0;"><strong>Globalisierung</strong> bedeutet, dass alle Länder dieser Erde immer stärker miteinander vernetzt sind. Die Wirtschaft ist weltweit verflochten, es herrscht weltweite Konkurrenz und Arbeitsteilung.</p>
+                <p style="margin-bottom: 0;">Der Spruch <em>"Die Welt ist ein Dorf"</em> meint, dass die Welt immer weiter zusammenwächst. Egal wo man sich auf der Welt befindet: Kommunikation, Transport und Handel sind heute fast überall und in "Echtzeit" möglich, als würde man in einem kleinen Dorf leben.</p>
+            </div>
+
+            <h3>2. Ursachen der Globalisierung</h3>
+            <p>Warum ist die Welt heute so stark vernetzt? Dafür gibt es sechs Hauptursachen:</p>
+            <ul>
+                <li><strong>Wunsch nach Produkten aus fernen Ländern:</strong> Z.B. exotische Früchte wie Bananen oder Technik aus den USA.</li>
+                <li><strong>Billigere Arbeitskräfte:</strong> Unternehmen verlagern Produktionen in Länder mit niedrigeren Lohnkosten.</li>
+                <li><strong>Günstigerer und einfacherer Transport:</strong> Frachtschiffe, Flugzeuge und Container machen den Warentransport über weite Strecken rentabel.</li>
+                <li><strong>Abbau von Handelsbeschränkungen:</strong> Freier Handel wird erleichtert, z.B. durch den Wegfall von Zöllen innerhalb der EU.</li>
+                <li><strong>Bessere Kommunikationswege:</strong> Informationen können in Sekundenschnelle weltweit ausgetauscht werden.</li>
+                <li><strong>Neue Technologien:</strong> Das Internet und moderne Satellitentechnik erleichtern Arbeitsprozesse und weltweite Koordination.</li>
+            </ul>
+        </section>
+
+    
+
+        <!-- 1. VERÄNDERUNGEN DURCH GLOBALISIERUNG -->
+        <section class="card">
+            <h2>🔄 Thema: Was verändert die Globalisierung? (Aufgabe 2)</h2>
+            <p>Die Globalisierung betrifft fast alle Lebensbereiche. Aus den Notizen und ergänzenden Fakten ergeben sich folgende wesentliche Veränderungen:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Bereich</th>
+                        <th>Veränderungen & Auswirkungen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge blue">Wirtschaft & Finanzen</span></td>
+                        <td>
+                            <ul>
+                                <li>Erschließung <strong>neuer Absatzmärkte</strong> für Unternehmen weltweit.</li>
+                                <li><strong>Billigere Produktion</strong> durch weltweite Arbeitsteilung und Verlagerung von Fabriken in Niedriglohnländer.</li>
+                                <li><em>Ergänzung:</em> Weltweite und extrem schnelle Finanzströme; die Wirtschaft ist global voneinander abhängig.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge orange">Kultur & Gesellschaft</span></td>
+                        <td>
+                            <ul>
+                                <li>Menschen rücken näher zusammen und tauschen weltweit Erfahrungen aus (<strong>Kulturaustausch</strong>).</li>
+                                <li>Etablierung von <strong>Weltsprachen</strong> (v. a. Englisch) zur einfacheren internationalen Verständigung.</li>
+                                <li><em>Ergänzung:</em> Weltweite Verfügbarkeit von gleichen Konsumgütern, Filmen oder Musik (kulturelle Angleichung).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge green">Politik</span></td>
+                        <td>
+                            <ul>
+                                <li><em>Ergänzung:</em> Nationale Regierungen verlieren teilweise an Macht, da globale Probleme (wie Klimawandel oder Wirtschaftskrisen) nur durch <strong>internationale Zusammenarbeit</strong> (z.B. EU, UNO) gelöst werden können.</li>
+                                <li>Globalisierungskritiker fordern verstärkt politische Regulierungen, um den ungebremsten Vormarsch der Wirtschaft zu zügeln.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 2. DEFINITION -->
+        <section class="card">
+            <h2>📖 Thema: Definition der Globalisierung (Aufgabe 3)</h2>
+
+            <h3>1. Zusammenfassung des wissenschaftlichen Textes</h3>
+            <p>Ursprünglich beschreibt Globalisierung vor allem die weltweite Verflechtung der Wirtschaft (internationale Konkurrenz, Arbeitsteilung). Inzwischen beschreibt der Begriff jedoch die <strong>immer stärkere Verkoppelung von Vorgängen rund um den Globus</strong>. Durch moderne Technologie (Internet, Mobiltelefone, Satelliten) stehen Informationen überall fast gleichzeitig zur Verfügung.</p>
+
+            <h3>2. Die Globalisierung auf den Punkt gebracht</h3>
+            <div style="background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px; margin-top: 15px;">
+                <p style="margin-top: 0; font-style: italic;"><strong>Eigene Definition zusammengefasst:</strong><br>
+                "Globalisierung bedeutet, dass die Weltgemeinschaft wie ein großes Netz zusammenarbeitet. Wenn ein Land eine wirtschaftliche oder politische Entscheidung trifft, betrifft dies heutzutage nahezu jedes andere Land unmittelbar. Lokale Ereignisse bekommen schnell eine globale Bedeutung. Dies wird heute besonders durch moderne Technologien und weltweite Echtzeit-Kommunikation ermöglicht."</p>
+            </div>
+        </section>
+
+        <!-- 2. GEWINNER UND VERLIERER -->
+        <section class="card">
+            <h2>⚖️ Thema: Gewinner und Verlierer der Globalisierung</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall.</p>
+
+            <p>Die Globalisierung hat starke Auswirkungen auf alle Lebensbereiche, wobei die Kosten und der Nutzen sehr unterschiedlich verteilt sind.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gruppe</th>
+                        <th style="background-color: #d4edda;">Gewinner (Vorteile)</th>
+                        <th style="background-color: #f8d7da;">Verlierer (Nachteile)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Unternehmen</strong></td>
+                        <td><mark>Global Players</mark> profitieren stark. Sie können ihre Produktion in Niedriglohnländer verlagern, um Lohnkosten zu sparen, und Firmensitze in Länder mit niedrigen Steuern verlegen.</td>
+                        <td>Werke in Hochlohnländern stehen unter extremem Kostendruck und müssen im Konzernwettbewerb oft Zugeständnisse machen (z.B. Lohnverzicht), um nicht geschlossen zu werden.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Arbeitnehmer</strong></td>
+                        <td>Gut ausgebildete und hochqualifizierte Fachkräfte profitieren von den Wohlstandseffekten und dem weltweiten Zugang zu Wissen[cite: 46, 47].</td>
+                        <td>Ungelernte und Arbeitskräfte in Niedriglohnländern. In Ländern wie Bangladesch arbeiten Menschen oft 12 Stunden am Tag für nur ca. 80 € Mindestlohn im Monat. In Hochlohnländern steigt der Druck durch mögliche Standortverlagerungen.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Konsumenten</strong></td>
+                        <td>Sie können aus einem weltweiten Angebot wählen und Markenprodukte oder Billigwaren verhältnismäßig günstig kaufen.</td>
+                        <td>Sie bemerken von dem harten Konkurrenzkampf und den oft sehr schlechten Herstellungsbedingungen hinter den Produkten in der Regel nichts.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 14: GRENZEN UND ZUKUNFT DER GLOBALISIERUNG          -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #16a085, #1abc9c);">🛑 Block 14: Grenzen und Zukunft der Globalisierung</div>
+
+        <!-- 1. GRENZEN DER GLOBALISIERUNG -->
+        <section class="card">
+            <h2>🚧 Thema: Hat die Globalisierung Grenzen?</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 48].</p>
+
+            <h3>1. Ungewollte vs. Gewollte Grenzen</h3>
+            <p>Obwohl die Welt stark vernetzt ist, gibt es immer noch Grenzen der Globalisierung[cite: 48]. Diese lassen sich in zwei Kategorien einteilen:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #f8d7da; width: 50%;">Ungewollte Grenzen</th>
+                        <th style="background-color: #e8f4f8; width: 50%;">Gewollte Grenzen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Beispiele: Sprache, unterschiedliche Kulturen oder Religionen[cite: 48].</li>
+                                <li><strong>Ziel:</strong> Beseitigung von Hindernissen, z.B. durch Übersetzungs-Apps oder Künstliche Intelligenz (KI)[cite: 48].</li>
+                                <li>Solche Grenzen sind in der Regel schlecht für den Staat und die Wirtschaft[cite: 48].</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Beispiele: Politische Grenzen, Begrenzung von Handel, Zensur (z.B. im Internet) und Kontrolle[cite: 48].</li>
+                                <li><strong>Ziel:</strong> Gezieltes Aufbauen von Hindernissen[cite: 48].</li>
+                                <li>Dies ist eine politische Entscheidung, bei der Kosten und Nutzen abgewogen werden[cite: 48].</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2. Fallbeispiel: Ein Flüchtling, der keiner war</h3>
+            <div style="background-color: #fff9e6; padding: 15px; border-left: 4px solid var(--warning-color); border-radius: 4px; margin-top: 15px;">
+                <p style="margin-top: 0;">Ein kurioser Fall aus Heidelberg zeigt, wie eine <strong>Sprachbarriere (ungewollte Grenze)</strong> zu enormen Missverständnissen führen kann[cite: 48].</p>
+                <ul style="margin-bottom: 0;">
+                    <li>Einem chinesischen Rucksack-Touristen wurde der Geldbeutel gestohlen[cite: 48]. Weil er weder Deutsch noch Englisch sprach, landete er statt bei der Polizei in einer Aufnahmebehörde[cite: 48].</li>
+                    <li>Ohne es zu verstehen, unterschrieb er einen Asylantrag, gab seinen Pass ab, wurde in ein Lager gebracht und erhielt Taschengeld[cite: 48].</li>
+                    <li>Erst nach fast zwei Wochen konnte der Irrtum mithilfe einer Übersetzungs-App (empfohlen von einem China-Restaurant) aufgeklärt werden[cite: 48].</li>
+                    <li><strong>Zitat passend zum Thema:</strong> <em>"Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt."</em> (Ludwig Wittgenstein)[cite: 48].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 2. ZUKUNFT DER GLOBALISIERUNG -->
+        <section class="card">
+            <h2>🔮 Thema: Zukunft der Globalisierung – Wer gestaltet sie?</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 43].</p>
+
+            <p>Die Globalisierung ist kein unaufhaltsamer Prozess, sondern kann von verschiedenen Akteuren aktiv mitgestaltet und beeinflusst werden[cite: 43]:</p>
+
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px; background-color: #fce4ec; padding: 15px; border-left: 4px solid #e91e63; border-radius: 4px;">
+                    <h4 style="margin-top:0;">🏛️ Der Staat</h4>
+                    <p style="margin-bottom: 0;">Durch internationale Zusammenarbeit (z.B. in der EU) oder durch Verträge und Handelsabkommen mit anderen Staaten[cite: 43].</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px;">
+                    <h4 style="margin-top:0;">👤 Einzelpersonen</h4>
+                    <p style="margin-bottom: 0;">Durch <strong>Konsumentscheidungen</strong> (Was kaufe ich?) und durch <strong>Wahlen</strong> (Wähle ich Parteien für oder gegen die Globalisierung?)[cite: 43].</p>
+                </div>
+                <div style="flex: 1; min-width: 200px; background-color: #d4edda; padding: 15px; border-left: 4px solid #28a745; border-radius: 4px;">
+                    <h4 style="margin-top:0;">🌍 Verbände & NGOs</h4>
+                    <p style="margin-bottom: 0;">Internationale Verbände wie die UNO oder Nichtregierungsorganisationen (NGOs), die oft Kritik an der Globalisierung üben (da sie Ungleichheit fördern kann) und als Hilfsorganisationen vor Ort agieren[cite: 43].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. LÄNDERVERGLEICH UND LEBENSQUALITÄT -->
+        <section class="card">
+            <h2>📊 Thema: Wohlstand und Lebensqualität im Ländervergleich</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall.</p>
+
+            <h3>1. Vier Länder im Vergleich (Stand ca. 2018-2020)</h3>
+            <ul>
+                <li><span class="badge green">Industrieland (Deutschland):</span> Sehr gute wirtschaftliche und soziale Lage. Hohes Bruttoinlandsprodukt (BIP) pro Kopf (46.900 $), hohe Lebenserwartung (81 Jahre) und keine nennenswerte Analphabetenquote.</li>
+                <li><span class="badge orange">Schwellenland (Vietnam):</span> Befindet sich im Aufschwung. Das BIP pro Kopf (6.900 $) ist noch relativ niedrig, aber es gibt ein starkes Wirtschaftswachstum (6,8 %) und gute soziale Werte (nur 5 % Analphabeten).</li>
+                <li><span class="badge red">Entwicklungsländer (Elfenbeinküste / Bangladesch):</span> Die Wirtschaft ist schwach (BIP pro Kopf bei nur 3.900 $ bzw. 4.200 $). Dies zeigt sich in einer prekären sozialen Lage mit extrem hohen Armutsquoten (46 % bzw. 24 %) und vielen Analphabeten (53 % bzw. 27 %).</li>
+            </ul>
+
+            <h3>2. Wohlstand vs. Lebensqualität</h3>
+            <div style="background-color: #fff3e0; padding: 15px; border-left: 4px solid #e67e22; border-radius: 4px; margin-top: 20px;">
+                <p style="margin-top: 0;"><strong>Warum lassen sich Länder leichter nach Wohlstand als nach Lebensqualität vergleichen?</strong></p>
+                <p style="margin-bottom: 0;">Wohlstand lässt sich sehr leicht anhand von festen, messbaren Zahlen vergleichen, wie zum Beispiel dem BIP pro Kopf, der Wachstumsrate oder dem Exportvolumen. Lebensqualität hingegen umfasst auch Aspekte, die sich schwer in Statistiken fassen lassen. Reine Exportzahlen zeigen beispielsweise nicht, unter welchen harten Bedingungen (z.B. 12-Stunden-Schichten in Textilfabriken) dieser Wohlstand erwirtschaftet wurde. Auch die Schere zwischen Arm und Reich innerhalb eines Landes wird durch einen einfachen Durchschnittswert des Wohlstands nicht abgebildet.</p>
+            </div>
+        </section>
+
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 15: FRIEDENSSICHERUNG & BUNDESWEHR                  -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #34495e, #2c3e50);">🕊️ Block 15: Friedenssicherung & Entwicklungszusammenarbeit</div>
+
+
+
+        <!-- 1. KRIEG UND URSACHEN -->
+        <section class="card">
+            <h2>⚔️ Thema: Krieg und Konflikte</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 50].</p>
+
+            <h3>1. Definitionen</h3>
+            <ul>
+                <li><strong>Gewaltsame Krise:</strong> Vereinzelte Gewalt zwischen Konfliktparteien[cite: 50].</li>
+                <li><strong>Begrenzter Krieg:</strong> Konfliktparteien liefern sich immer wieder gewalttätige Auseinandersetzungen[cite: 50].</li>
+                <li><strong>Krieg:</strong> Systematische, organisierte Gewalt zwischen Konfliktparteien[cite: 50].</li>
+            </ul>
+
+            <h3>2. Fünf Ursachen (Kategorien) für Kriege</h3>
+            <p>Kriege können aus unterschiedlichen Motiven entstehen[cite: 50]:</p>
+            <ol>
+                <li><strong>Politik</strong>[cite: 50]</li>
+                <li><strong>Grenzen / Gebiete</strong>[cite: 50]</li>
+                <li><strong>Wirtschaft</strong> (z.B. Rohstoffe)[cite: 50]</li>
+                <li><strong>Gesellschaftsordnung / Ethnische Gründe</strong> (z.B. Kommunismus)[cite: 50]</li>
+                <li><strong>Religion</strong>[cite: 50]</li>
+            </ol>
+            
+            <div style="background-color: #f8d7da; padding: 15px; border-left: 4px solid #dc3545; border-radius: 4px; margin-top: 15px;">
+                <p style="margin-top: 0;"><strong>Wie hat sich Krieg im 21. Jahrhundert verändert? (Interpretation der Karikatur)</strong></p>
+                <p style="margin-bottom: 0;">Moderne Kriege werden zunehmend aus der Distanz und technologisch (z.B. durch den Einsatz von Drohnen) geführt[cite: 50]. Dies kritisiert eine gewisse "Distanzierung" vom Töten – man macht sich buchstäblich "nicht mehr die Finger schmutzig", während weit entfernt Menschen sterben[cite: 50].</p>
+            </div>
+        </section>
+
+        <!-- 2. DIE UNO -->
+        <section class="card">
+            <h2>🇺🇳 Thema: Die UNO (Vereinte Nationen)</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 50].</p>
+
+            <p>Nach dem Zweiten Weltkrieg wurde die UNO mit dem Hauptziel der <strong>Sicherung des Weltfriedens</strong> gegründet[cite: 50]. Generell gilt ein Gewaltverbot, außer zur Verteidigung im Fall eines Angriffs[cite: 50].</p>
+
+            <h3>Die 4 Aufgabenbereiche der UNO</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aufgabe</th>
+                        <th>Aktionen / Beispiele</th>
+                        <th>Was soll erreicht werden?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Friedenssicherung</strong></td>
+                        <td>Stationierung von Truppen ("Blauhelme") in Konfliktgebieten[cite: 50].</td>
+                        <td>Beziehungen zwischen Staaten schützen, Weltfrieden sichern[cite: 50].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Schutz der Menschenrechte</strong></td>
+                        <td>Sicherung von Wahlen in Ländern[cite: 50].</td>
+                        <td>Durchsetzung der Menschenrechte und Frieden sichern[cite: 50].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Internationale Zusammenarbeit</strong></td>
+                        <td colspan="2" rowspan="2">Programme wie UNICEF, z.B. Schul- oder Ernährungsprogramme[cite: 50].</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Entwicklungszusammenarbeit</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Der UN-Sicherheitsrat</h3>
+            <p>Das eigentliche Machtzentrum der UNO. Er entscheidet über Sanktionen (Strafen) und den Einsatz von UN-Truppen ("Blauhelme") bei Konflikten zwischen Staaten[cite: 50].</p>
+            <ul>
+                <li><strong>Mitglieder:</strong> Insgesamt 15 Staaten[cite: 50].</li>
+                <li><strong>5 Ständige Mitglieder:</strong> China, Frankreich, Großbritannien, Russland, USA[cite: 50]. Diese besitzen ein <strong>Veto-Recht</strong> (sie können Entscheidungen komplett blockieren)[cite: 50].</li>
+                <li><strong>10 Wechselnde Mitglieder:</strong> Werden von der UN-Generalversammlung für jeweils 2 Jahre gewählt[cite: 50].</li>
+                <li><strong>Beschlussfassung:</strong> Ein Beschluss gilt, wenn 9 der 15 Mitglieder zustimmen UND kein ständiges Mitglied sein Veto einlegt[cite: 50].</li>
+            </ul>
+        </section>
+
+        <!-- 3. DIE BUNDESWEHR -->
+        <section class="card">
+            <h2>🇩🇪 Thema: Die Bundeswehr</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 50].</p>
+
+            <h3>1. Einsatzregeln</h3>
+            <p>Für Auslandseinsätze der Bundeswehr gelten strenge Regeln[cite: 50]:</p>
+            <ol>
+                <li>Der Bundestag muss <strong>vor jedem Einsatz</strong> ein Gesetz verabschieden (gilt immer nur für 1 Jahr)[cite: 50]. Nur der Bundestag darf entscheiden, ob Soldaten ins Ausland geschickt werden ("Parlamentsarmee")[cite: 50].</li>
+                <li>Auftraggeber im Rahmen der NATO darf nur der UN-Sicherheitsrat sein[cite: 50].</li>
+            </ol>
+
+            <h3>2. Aufgaben der Bundeswehr</h3>
+            <ul>
+                <li><strong>Außenpolitische Aufgaben:</strong> Kampf gegen Terrorismus, internationale Konfliktverhütung und Krisenbewältigung (z.B. Einsatz in Mali)[cite: 50].</li>
+                <li><strong>Europäische Aufgaben:</strong> Ausbildung von Soldaten, Beteiligung an UN-Friedensmissionen (helfen, den Frieden zu erhalten), Gemeinsame EU-Sicherheitspolitik (z.B. Fluchtursachen bekämpfen)[cite: 50].</li>
+                <li><strong>Innenpolitische Aufgaben:</strong> Landesverteidigung, Schutz der Bevölkerung auf deutschem Gebiet, Amtshilfe bei Naturkatastrophen und Unglücksfällen[cite: 50].</li>
+            </ul>
+
+            <h3>3. Die allgemeine Wehrpflicht (Art. 12a GG)</h3>
+            <p>Die 1956 eingeführte Wehrpflicht verpflichtete Männer ab 18 Jahren zum Dienst in der Armee oder zum Zivildienst[cite: 50]. Frauen können nur im Verteidigungsfall (ziviles Sanitätswesen) verpflichtet werden, dürfen aber nicht mit der Waffe dienen[cite: 50]. <strong>Seit 2011 ist die Wehrpflicht ausgesetzt</strong>, kann aber im Verteidigungsfall reaktiviert werden[cite: 50].</p>
+        </section>
+
+        <!-- 4. DIE NATO -->
+        <section class="card">
+            <h2>🤝 Thema: Die NATO</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 50].</p>
+
+            <p>Die NATO (North Atlantic Treaty Organization) ist ein 1949 gegründetes Militärbündnis[cite: 50].</p>
+
+            <h3>Wandel der NATO-Ziele</h3>
+            <p>Was hat sich von 1949 zu 2010 geändert?[cite: 50]</p>
+            <ul>
+                <li><strong>Neue Bedrohungen:</strong> Fokus liegt nun auch auf Gefahren wie dem internationalen Terrorismus[cite: 50].</li>
+                <li><strong>Prävention:</strong> Ziel ist es, Krisen und Konflikte frühzeitig zu verhindern[cite: 50].</li>
+                <li><strong>Wandel:</strong> Entwicklung von einem reinen Militärbündnis (zur Verteidigung) hin zu einem Sicherheitsbündnis (z.B. Einsätze zur Friedenssicherung auch außerhalb des NATO-Gebiets, sogenannte "Out-of-Area"-Einsätze)[cite: 50].</li>
+            </ul>
+
+            <div style="background-color: #fff9e6; padding: 15px; border-left: 4px solid var(--warning-color); border-radius: 4px; margin-top: 15px;">
+                <p style="margin-top: 0;"><strong>Interpretation der Panzer-Karikatur zur NATO</strong></p>
+                <p style="margin-bottom: 0;">Die Karikatur kritisiert den Widerspruch "Frieden durch Waffen"[cite: 50]. Es wird hinterfragt, ob Sicherheit wirklich nur durch militärische Bedrohung und Aufrüstung (als schwer bewaffnetes Bündnis getarnt im Namen des Friedens) geschaffen werden kann[cite: 50].</p>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- BLOCK 16: HERAUSFORDERUNG EU - NATIONALISMUS ODER EINHEIT -->
+        <!-- ========================================================= -->
+        <div class="block-title" style="background: linear-gradient(135deg, #e67e22, #d35400);">🇪🇺 Block 16: Herausforderung EU – Nationalismus oder Einheit</div>
+
+        <!-- 1. PROBLEM: EU-SKEPSIS -->
+        <section class="card">
+            <h2>⚠️ Worum geht es? Das Problem der EU-Skepsis</h2>
+            <p><strong>Schule:</strong> Gewerbliche Schule Schwäbisch Hall[cite: 51].</p>
+
+            <p>Viele Menschen in Europa stehen der Europäischen Union kritisch gegenüber. Das hat verschiedene Gründe[cite: 51]:</p>
+            <ul>
+                <li><strong>Mangelnde Mitbestimmung:</strong> Die Bürger haben oft das Gefühl, dass wichtige Entscheidungen über ihre Köpfe hinweg (meist in Brüssel) getroffen werden[cite: 51].</li>
+                <li><strong>Wunsch nach Souveränität:</strong> Viele Leute fordern wieder mehr Macht für ihr eigenes Land anstelle von weitreichenden EU-Vorgaben[cite: 51].</li>
+                <li><strong>Instrumentalisierung von Ängsten:</strong> Europakritische Parteien nutzen gezielt die Sorgen der Menschen – zum Beispiel bei den Themen Geld, Sicherheit, Migration und Klima – für ihre Wahlkampfideen[cite: 51].</li>
+            </ul>
+
+            <h3>EU-Skepsis in Zahlen</h3>
+            <p>In einigen Ländern ist die Ablehnung oder Skepsis gegenüber der EU besonders groß[cite: 51]:</p>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                <span class="badge red">Belgien: 60 %</span>
+                <span class="badge orange">Frankreich: 42 %</span>
+                <span class="badge orange">Österreich: 30 %</span>
+                <span class="badge yellow">Deutschland: 26 %</span>
+            </div>
+        </section>
+
+        <!-- 2. LÖSUNGEN UND FOLGEN -->
+        <section class="card">
+            <h2>💡 Lösungsansätze und mögliche Folgen</h2>
+            
+            <h3>1. Gibt es Lösungen?</h3>
+            <ul>
+                <li><strong>Bessere Kommunikation:</strong> Die EU muss besser und verständlicher erklären, was sie tut[cite: 51].</li>
+                <li><strong>Ehrlichkeit:</strong> Politiker sollten nur realistische Versprechen machen, um die Leute nicht zu enttäuschen[cite: 51].</li>
+                <li><strong>Gute Alternativen:</strong> Wenn fortschrittliche Parteien überzeugende Lösungen anbieten, wenden sich weniger Menschen den Extremisten zu[cite: 51].</li>
+                <li><em>Wichtig:</em> Viele europakritische Parteien wollen die EU mittlerweile eher <em>von innen verändern</em>, statt sie komplett zu verlassen[cite: 51].</li>
+            </ul>
+
+            <h3>2. Bringt das die EU zusammen oder auseinander?</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background-color: #f8d7da; width: 50%;">💔 Gefahr der Spaltung</th>
+                        <th style="background-color: #d4edda; width: 50%;">🤝 Chance auf Einheit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Europakritische Parteien könnten den Apparat lähmen und <strong>wichtige Entscheidungen blockieren</strong>[cite: 51].</td>
+                        <td>Wenn die EU <strong>reformiert</strong> wird und die Bürger mehr mitbestimmen dürfen, könnten die Menschen wieder <strong>mehr Vertrauen</strong> fassen[cite: 51].</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Fazit</h3>
+            <div style="background-color: #e8f4f8; padding: 15px; border-left: 4px solid #3498db; border-radius: 4px; margin-top: 15px;">
+                <p style="margin: 0;">Momentan stellt die EU-Skepsis ein <strong>Risiko</strong> dar und könnte die EU im schlimmsten Fall auseinanderbringen. Sie kann jedoch auch zu <strong>Verbesserungen</strong> führen, wenn die Politik richtig reagiert und Reformen anstößt[cite: 51].</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
